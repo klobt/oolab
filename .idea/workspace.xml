@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab1: Punkt 16&#10;&#10;Zmodyfikuj program w ten sposób, aby metoda run nie akceptowała tablicy łańcuchów znaków, lecz tablicę wartości typu wyliczeniowego (enum). Zamiana łańcuchów znaków powinna być realizowana przez metodę wywoływaną w funkcji main przed wywołaniem metody run, natomiast typ wyliczeniowy powinien być zdefiniowany w osobnym pliku (Direction.java) w pakiecie agh.ics.oop.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/Direction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/World.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666005211303</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Lab1: Punkt 16&#10;&#10;Zmodyfikuj program w ten sposób, aby metoda run nie akceptowała tablicy łańcuchów znaków, lecz tablicę wartości typu wyliczeniowego (enum). Zamiana łańcuchów znaków powinna być realizowana przez metodę wywoływaną w funkcji main przed wywołaniem metody run, natomiast typ wyliczeniowy powinien być zdefiniowany w osobnym pliku (Direction.java) w pakiecie agh.ics.oop.">
+      <created>1666005742961</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1666005742961</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
