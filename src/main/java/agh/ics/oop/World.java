@@ -1,26 +1,23 @@
 package agh.ics.oop;
 
-import java.util.Vector;
+import java.util.stream.Stream;
 
 public class World {
     public static void main(String[] arguments) {
         System.out.println("system wystartował");
-        Vector<Direction> directions = new Vector<Direction>();
-        for (String argument : arguments) {
-            directions.add(switch (argument) {
-                case "f" -> Direction.FORWARD;
-                case "b" -> Direction.BACKWARD;
-                case "r" -> Direction.RIGHT;
-                case "l" -> Direction.LEFT;
-                default -> null;
-            });
-        }
-        run(directions.toArray(Direction[]::new));
+        Stream<Direction> directionStream = Stream.of(arguments).map(argument -> switch (argument) {
+            case "f" -> Direction.FORWARD;
+            case "b" -> Direction.BACKWARD;
+            case "r" -> Direction.RIGHT;
+            case "l" -> Direction.LEFT;
+            default -> null;
+        });
+        run(directionStream);
         System.out.println("system zakończył działanie");
     }
-    private static void run(Direction[] directions) {
+    private static void run(Stream<Direction> directionStream) {
         System.out.println("Start");
-        for (Direction direction : directions) {
+        directionStream.forEach(direction -> {
             switch (direction) {
                 case FORWARD:
                     System.out.println("Zwierzak idzie do przodu");
@@ -37,7 +34,7 @@ public class World {
                 default:
                     // ignoruj
             }
-        }
+        });
         System.out.println("Stop");
     }
 }

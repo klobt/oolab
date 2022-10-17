@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab1: Punkt 20&#10;&#10;W tym samym pliku dodaj sekcję: ...">
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab1: Punkt 21&#10;&#10;W tym samym pliku dodaj sekcję: ...">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/World.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +150,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666005828257</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Lab1: Punkt 21&#10;&#10;W tym samym pliku dodaj sekcję: ...">
+      <created>1666005849092</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1666005849092</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Lab1: Punkt 21&#10;&#10;W tym samym pliku dodaj sekcję: ...">
+      <created>1666005889333</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1666005889333</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -176,6 +191,7 @@
     <MESSAGE value="Lab1: Punkt 16&#10;&#10;Zmodyfikuj program w ten sposób, aby metoda run nie akceptowała tablicy łańcuchów znaków, lecz tablicę wartości typu wyliczeniowego (enum). Zamiana łańcuchów znaków powinna być realizowana przez metodę wywoływaną w funkcji main przed wywołaniem metody run, natomiast typ wyliczeniowy powinien być zdefiniowany w osobnym pliku (Direction.java) w pakiecie agh.ics.oop." />
     <MESSAGE value="Lab1: Punkt 19&#10;&#10;W pliku build.gradle w sekcji plugins dodaj linię: ...." />
     <MESSAGE value="Lab1: Punkt 20&#10;&#10;W tym samym pliku dodaj sekcję: ..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab1: Punkt 20&#10;&#10;W tym samym pliku dodaj sekcję: ..." />
+    <MESSAGE value="Lab1: Punkt 21&#10;&#10;W tym samym pliku dodaj sekcję: ..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab1: Punkt 21&#10;&#10;W tym samym pliku dodaj sekcję: ..." />
   </component>
 </project>
