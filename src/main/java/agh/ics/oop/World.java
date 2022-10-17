@@ -2,6 +2,10 @@ package agh.ics.oop;
 
 import java.util.stream.Stream;
 
+/*
+ * REPOZYTORIUM GIT: https://github.com/klobt/oolab
+ */
+
 public class World {
     public static void main(String[] arguments) {
         System.out.println("system wystartował");
