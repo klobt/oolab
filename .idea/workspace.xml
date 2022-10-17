@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab1: Punkt 4.&#10;&#10;W pakiecie agh.ics.oop utwórz klasę World ze statyczną funkcją main.">
+    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab1: Punkt 5.&#10;&#10;Zaimplementuj metodę main tak aby wyświetlały się dwa komunikaty:&#10;- system wystartował&#10;- system zakończył działanie">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/World.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666004289747</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Lab1: Punkt 5.&#10;&#10;Zaimplementuj metodę main tak aby wyświetlały się dwa komunikaty:&#10;- system wystartował&#10;- system zakończył działanie">
+      <created>1666004369481</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666004369481</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -90,6 +98,7 @@
     <MESSAGE value="Lab1: Punkt 2.&#10;&#10;Utwórz nowy projekt typu Gradle -&gt; Java (!nie Java -&gt; Java) o nazwie oolab." />
     <MESSAGE value="Lab1: Punkt 3.&#10;&#10;W katalogu src/main/java/ utwórz pakiet agh.ics.oop (ppm na src/main/java -&gt; New package)." />
     <MESSAGE value="Lab1: Punkt 4.&#10;&#10;W pakiecie agh.ics.oop utwórz klasę World ze statyczną funkcją main." />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab1: Punkt 4.&#10;&#10;W pakiecie agh.ics.oop utwórz klasę World ze statyczną funkcją main." />
+    <MESSAGE value="Lab1: Punkt 5.&#10;&#10;Zaimplementuj metodę main tak aby wyświetlały się dwa komunikaty:&#10;- system wystartował&#10;- system zakończył działanie" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab1: Punkt 5.&#10;&#10;Zaimplementuj metodę main tak aby wyświetlały się dwa komunikaty:&#10;- system wystartował&#10;- system zakończył działanie" />
   </component>
 </project>
