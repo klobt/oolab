@@ -7,16 +7,25 @@ public class World {
         System.out.println("system zakończył działanie");
     }
     private static void run(String[] arguments) {
-        System.out.println("zwierzak idzie do przodu");
-        boolean first = true;
+        System.out.println("Start");
         for (String argument : arguments) {
-            if (first) {
-                first = false;
-            } else {
-                System.out.print(", ");
+            switch (argument) {
+                case "f":
+                    System.out.println("Zwierzak idzie do przodu");
+                    break;
+                case "b":
+                    System.out.println("Zwierzak idzie do tyłu");
+                    break;
+                case "r":
+                    System.out.println("Zwierzak skręca w prawo");
+                    break;
+                case "l":
+                    System.out.println("Zwierzak skręca w lewo");
+                    break;
+                default:
+                    // ignoruj
             }
-            System.out.print(argument);
         }
-        System.out.println();
+        System.out.println("Stop");
     }
 }

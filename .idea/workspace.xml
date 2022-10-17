@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab1: Punkt 8.&#10;&#10;Metoda run powinna informować o tym, że zwierzak idzie do przodu.">
+    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab1: Punkt 14.&#10;&#10;Zmodyfikuj program tak aby interpretował wprowadzone argument:&#10;- f - oznacza, że zwierzak idzie do przodu,&#10;- b - oznacza, że zwierzak idzie do tyłu,&#10;- r - oznacza, że zwierzak skręca w prawo,&#10;- l - oznacza, że zwierzak skręca w lewo,&#10;- pozostałe argumenty powinny być ignorowane.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/World.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,12 +37,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="World" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="agh.ics.oop.World" />
+      <module name="oolab.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="agh.ics.oop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.World" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -93,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666004467013</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Lab1: Punkt 11.&#10;&#10;Po komunikacie o poruszaniu się do przodu wypisz w konsoli wartości wszystkich argumentów tej metody oddzielone przecinkami.">
+      <created>1666004761999</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1666004761999</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -114,6 +142,8 @@
     <MESSAGE value="Lab1: Punkt 5.&#10;&#10;Zaimplementuj metodę main tak aby wyświetlały się dwa komunikaty:&#10;- system wystartował&#10;- system zakończył działanie" />
     <MESSAGE value="Lab1: Punkt 7.&#10;&#10;Dodaj metodę statyczną run, która jest wywoływana pomiędzy tymi komunikatami." />
     <MESSAGE value="Lab1: Punkt 8.&#10;&#10;Metoda run powinna informować o tym, że zwierzak idzie do przodu." />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab1: Punkt 8.&#10;&#10;Metoda run powinna informować o tym, że zwierzak idzie do przodu." />
+    <MESSAGE value="Lab1: Punkt 11.&#10;&#10;Po komunikacie o poruszaniu się do przodu wypisz w konsoli wartości wszystkich argumentów tej metody oddzielone przecinkami." />
+    <MESSAGE value="Lab1: Punkt 14.&#10;&#10;Zmodyfikuj program tak aby interpretował wprowadzone argument:&#10;- f - oznacza, że zwierzak idzie do przodu,&#10;- b - oznacza, że zwierzak idzie do tyłu,&#10;- r - oznacza, że zwierzak skręca w prawo,&#10;- l - oznacza, że zwierzak skręca w lewo,&#10;- pozostałe argumenty powinny być ignorowane." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab1: Punkt 14.&#10;&#10;Zmodyfikuj program tak aby interpretował wprowadzone argument:&#10;- f - oznacza, że zwierzak idzie do przodu,&#10;- b - oznacza, że zwierzak idzie do tyłu,&#10;- r - oznacza, że zwierzak skręca w prawo,&#10;- l - oznacza, że zwierzak skręca w lewo,&#10;- pozostałe argumenty powinny być ignorowane." />
   </component>
 </project>
