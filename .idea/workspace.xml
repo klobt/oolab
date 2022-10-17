@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab1: Punkt 14.&#10;&#10;Zmodyfikuj program tak aby interpretował wprowadzone argument:&#10;- f - oznacza, że zwierzak idzie do przodu,&#10;- b - oznacza, że zwierzak idzie do tyłu,&#10;- r - oznacza, że zwierzak skręca w prawo,&#10;- l - oznacza, że zwierzak skręca w lewo,&#10;- pozostałe argumenty powinny być ignorowane.">
+    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab1: Punkt 16&#10;&#10;Zmodyfikuj program w ten sposób, aby metoda run nie akceptowała tablicy łańcuchów znaków, lecz tablicę wartości typu wyliczeniowego (enum). Zamiana łańcuchów znaków powinna być realizowana przez metodę wywoływaną w funkcji main przed wywołaniem metody run, natomiast typ wyliczeniowy powinien być zdefiniowany w osobnym pliku (Direction.java) w pakiecie agh.ics.oop.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/Direction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/World.java" afterDir="false" />
     </list>
@@ -47,6 +48,7 @@
     <configuration name="World" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="agh.ics.oop.World" />
       <module name="oolab.main" />
+      <option name="PROGRAM_PARAMETERS" value="f f l l r r b f" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="agh.ics.oop.*" />
@@ -121,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666004761999</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Lab1: Punkt 15&#10;&#10;Poruszanie się oraz zmiana kierunku ma być oznajmiana odpowiednim komunikatem. Program powinien akceptować dowolną liczbę argumentów. Przykładowo wprowadzenie sekwencji f f r l powinno dać w wyniku następujące komunikaty:&#10;- Start&#10;- Zwierzak idzie do przodu&#10;- Zwierzak idzie do przodu&#10;- Zwierzak skręca w prawo&#10;- Zwierzak skręca w lewo&#10;- Stop">
+      <created>1666005211303</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1666005211303</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -144,6 +153,8 @@
     <MESSAGE value="Lab1: Punkt 8.&#10;&#10;Metoda run powinna informować o tym, że zwierzak idzie do przodu." />
     <MESSAGE value="Lab1: Punkt 11.&#10;&#10;Po komunikacie o poruszaniu się do przodu wypisz w konsoli wartości wszystkich argumentów tej metody oddzielone przecinkami." />
     <MESSAGE value="Lab1: Punkt 14.&#10;&#10;Zmodyfikuj program tak aby interpretował wprowadzone argument:&#10;- f - oznacza, że zwierzak idzie do przodu,&#10;- b - oznacza, że zwierzak idzie do tyłu,&#10;- r - oznacza, że zwierzak skręca w prawo,&#10;- l - oznacza, że zwierzak skręca w lewo,&#10;- pozostałe argumenty powinny być ignorowane." />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab1: Punkt 14.&#10;&#10;Zmodyfikuj program tak aby interpretował wprowadzone argument:&#10;- f - oznacza, że zwierzak idzie do przodu,&#10;- b - oznacza, że zwierzak idzie do tyłu,&#10;- r - oznacza, że zwierzak skręca w prawo,&#10;- l - oznacza, że zwierzak skręca w lewo,&#10;- pozostałe argumenty powinny być ignorowane." />
+    <MESSAGE value="Lab1: Punkt 15&#10;&#10;Poruszanie się oraz zmiana kierunku ma być oznajmiana odpowiednim komunikatem. Program powinien akceptować dowolną liczbę argumentów. Przykładowo wprowadzenie sekwencji f f r l powinno dać w wyniku następujące komunikaty:&#10;- Start&#10;- Zwierzak idzie do przodu&#10;- Zwierzak idzie do przodu&#10;- Zwierzak skręca w prawo&#10;- Zwierzak skręca w lewo&#10;- Stop" />
+    <MESSAGE value="Lab1: Punkt 16&#10;&#10;Zmodyfikuj program w ten sposób, aby metoda run nie akceptowała tablicy łańcuchów znaków, lecz tablicę wartości typu wyliczeniowego (enum). Zamiana łańcuchów znaków powinna być realizowana przez metodę wywoływaną w funkcji main przed wywołaniem metody run, natomiast typ wyliczeniowy powinien być zdefiniowany w osobnym pliku (Direction.java) w pakiecie agh.ics.oop." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab1: Punkt 16&#10;&#10;Zmodyfikuj program w ten sposób, aby metoda run nie akceptowała tablicy łańcuchów znaków, lecz tablicę wartości typu wyliczeniowego (enum). Zamiana łańcuchów znaków powinna być realizowana przez metodę wywoływaną w funkcji main przed wywołaniem metody run, natomiast typ wyliczeniowy powinien być zdefiniowany w osobnym pliku (Direction.java) w pakiecie agh.ics.oop." />
   </component>
 </project>
