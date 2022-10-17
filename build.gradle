@@ -22,3 +22,9 @@ test {
 application {
     getMainClass().set('agh.ics.oop.World')
 }
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(16))
+    }
+}

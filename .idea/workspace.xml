@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab1: Punkt 19&#10;&#10;W pliku build.gradle w sekcji plugins dodaj linię: ....">
+    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab1: Punkt 20&#10;&#10;W tym samym pliku dodaj sekcję: ...">
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666005798160</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Lab1: Punkt 20&#10;&#10;W tym samym pliku dodaj sekcję: ...">
+      <created>1666005828257</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1666005828257</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -168,6 +175,7 @@
     <MESSAGE value="Lab1: Punkt 15&#10;&#10;Poruszanie się oraz zmiana kierunku ma być oznajmiana odpowiednim komunikatem. Program powinien akceptować dowolną liczbę argumentów. Przykładowo wprowadzenie sekwencji f f r l powinno dać w wyniku następujące komunikaty:&#10;- Start&#10;- Zwierzak idzie do przodu&#10;- Zwierzak idzie do przodu&#10;- Zwierzak skręca w prawo&#10;- Zwierzak skręca w lewo&#10;- Stop" />
     <MESSAGE value="Lab1: Punkt 16&#10;&#10;Zmodyfikuj program w ten sposób, aby metoda run nie akceptowała tablicy łańcuchów znaków, lecz tablicę wartości typu wyliczeniowego (enum). Zamiana łańcuchów znaków powinna być realizowana przez metodę wywoływaną w funkcji main przed wywołaniem metody run, natomiast typ wyliczeniowy powinien być zdefiniowany w osobnym pliku (Direction.java) w pakiecie agh.ics.oop." />
     <MESSAGE value="Lab1: Punkt 19&#10;&#10;W pliku build.gradle w sekcji plugins dodaj linię: ...." />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab1: Punkt 19&#10;&#10;W pliku build.gradle w sekcji plugins dodaj linię: ...." />
+    <MESSAGE value="Lab1: Punkt 20&#10;&#10;W tym samym pliku dodaj sekcję: ..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab1: Punkt 20&#10;&#10;W tym samym pliku dodaj sekcję: ..." />
   </component>
 </project>
