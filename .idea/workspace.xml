@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab1: Punkt 16&#10;&#10;Zmodyfikuj program w ten sposób, aby metoda run nie akceptowała tablicy łańcuchów znaków, lecz tablicę wartości typu wyliczeniowego (enum). Zamiana łańcuchów znaków powinna być realizowana przez metodę wywoływaną w funkcji main przed wywołaniem metody run, natomiast typ wyliczeniowy powinien być zdefiniowany w osobnym pliku (Direction.java) w pakiecie agh.ics.oop.">
+    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab1: Punkt 19&#10;&#10;W pliku build.gradle w sekcji plugins dodaj linię: ....">
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -135,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666005742961</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Lab1: Punkt 19&#10;&#10;W pliku build.gradle w sekcji plugins dodaj linię: ....">
+      <created>1666005798160</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1666005798160</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,6 +167,7 @@
     <MESSAGE value="Lab1: Punkt 14.&#10;&#10;Zmodyfikuj program tak aby interpretował wprowadzone argument:&#10;- f - oznacza, że zwierzak idzie do przodu,&#10;- b - oznacza, że zwierzak idzie do tyłu,&#10;- r - oznacza, że zwierzak skręca w prawo,&#10;- l - oznacza, że zwierzak skręca w lewo,&#10;- pozostałe argumenty powinny być ignorowane." />
     <MESSAGE value="Lab1: Punkt 15&#10;&#10;Poruszanie się oraz zmiana kierunku ma być oznajmiana odpowiednim komunikatem. Program powinien akceptować dowolną liczbę argumentów. Przykładowo wprowadzenie sekwencji f f r l powinno dać w wyniku następujące komunikaty:&#10;- Start&#10;- Zwierzak idzie do przodu&#10;- Zwierzak idzie do przodu&#10;- Zwierzak skręca w prawo&#10;- Zwierzak skręca w lewo&#10;- Stop" />
     <MESSAGE value="Lab1: Punkt 16&#10;&#10;Zmodyfikuj program w ten sposób, aby metoda run nie akceptowała tablicy łańcuchów znaków, lecz tablicę wartości typu wyliczeniowego (enum). Zamiana łańcuchów znaków powinna być realizowana przez metodę wywoływaną w funkcji main przed wywołaniem metody run, natomiast typ wyliczeniowy powinien być zdefiniowany w osobnym pliku (Direction.java) w pakiecie agh.ics.oop." />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab1: Punkt 16&#10;&#10;Zmodyfikuj program w ten sposób, aby metoda run nie akceptowała tablicy łańcuchów znaków, lecz tablicę wartości typu wyliczeniowego (enum). Zamiana łańcuchów znaków powinna być realizowana przez metodę wywoływaną w funkcji main przed wywołaniem metody run, natomiast typ wyliczeniowy powinien być zdefiniowany w osobnym pliku (Direction.java) w pakiecie agh.ics.oop." />
+    <MESSAGE value="Lab1: Punkt 19&#10;&#10;W pliku build.gradle w sekcji plugins dodaj linię: ...." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab1: Punkt 19&#10;&#10;W pliku build.gradle w sekcji plugins dodaj linię: ...." />
   </component>
 </project>

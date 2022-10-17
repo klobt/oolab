@@ -18,3 +18,7 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+application {
+    getMainClass().set('agh.ics.oop.World')
+}
