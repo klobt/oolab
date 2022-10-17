@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab1: Punkt 5.&#10;&#10;Zaimplementuj metodę main tak aby wyświetlały się dwa komunikaty:&#10;- system wystartował&#10;- system zakończył działanie">
+    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab1: Punkt 7.&#10;&#10;Dodaj metodę statyczną run, która jest wywoływana pomiędzy tymi komunikatami.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/World.java" afterDir="false" />
     </list>
@@ -80,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666004369481</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Lab1: Punkt 7.&#10;&#10;Dodaj metodę statyczną run, która jest wywoływana pomiędzy tymi komunikatami.">
+      <created>1666004421723</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666004421723</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -99,6 +106,7 @@
     <MESSAGE value="Lab1: Punkt 3.&#10;&#10;W katalogu src/main/java/ utwórz pakiet agh.ics.oop (ppm na src/main/java -&gt; New package)." />
     <MESSAGE value="Lab1: Punkt 4.&#10;&#10;W pakiecie agh.ics.oop utwórz klasę World ze statyczną funkcją main." />
     <MESSAGE value="Lab1: Punkt 5.&#10;&#10;Zaimplementuj metodę main tak aby wyświetlały się dwa komunikaty:&#10;- system wystartował&#10;- system zakończył działanie" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab1: Punkt 5.&#10;&#10;Zaimplementuj metodę main tak aby wyświetlały się dwa komunikaty:&#10;- system wystartował&#10;- system zakończył działanie" />
+    <MESSAGE value="Lab1: Punkt 7.&#10;&#10;Dodaj metodę statyczną run, która jest wywoływana pomiędzy tymi komunikatami." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab1: Punkt 7.&#10;&#10;Dodaj metodę statyczną run, która jest wywoływana pomiędzy tymi komunikatami." />
   </component>
 </project>

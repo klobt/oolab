@@ -6,5 +6,7 @@ public class World {
         run();
         System.out.println("system zakończył działanie");
     }
-    private static void run() {}
+    private static void run() {
+        System.out.println("zwierzak idzie do przodu");
+    }
 }
