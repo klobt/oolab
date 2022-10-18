@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab2: Vector2d: implementacja klasy">
+    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab2: Vector2d: sprawdzenie działania">
+      <change afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/MoveDirection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/World.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -191,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666113407698</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Lab2: Vector2d: sprawdzenie działania">
+      <created>1666113534394</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1666113534394</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -222,6 +230,7 @@
     <MESSAGE value="Lab1: Punkt 26&#10;&#10;(Dla zaawansowanych) Zmień kod odpowiedzialny za konwersję argumentów oraz wyświetlanie kierunków, tak by korzystał z interfejsu stream dostępnego w Javie 8." />
     <MESSAGE value="Lab1: dodaj linka do repozytorium git" />
     <MESSAGE value="Lab2: Vector2d: implementacja klasy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab2: Vector2d: implementacja klasy" />
+    <MESSAGE value="Lab2: Vector2d: sprawdzenie działania" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab2: Vector2d: sprawdzenie działania" />
   </component>
 </project>
