@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab2: Vector2d: sprawdzenie działania">
-      <change afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/MoveDirection.java" afterDir="false" />
+    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab2: MoveDirection: implementacja">
+      <change afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/MapDirection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -199,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666113534394</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Lab2: MoveDirection: implementacja">
+      <created>1666113645362</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1666113645362</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -231,6 +238,7 @@
     <MESSAGE value="Lab1: dodaj linka do repozytorium git" />
     <MESSAGE value="Lab2: Vector2d: implementacja klasy" />
     <MESSAGE value="Lab2: Vector2d: sprawdzenie działania" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab2: Vector2d: sprawdzenie działania" />
+    <MESSAGE value="Lab2: MoveDirection: implementacja" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab2: MoveDirection: implementacja" />
   </component>
 </project>
