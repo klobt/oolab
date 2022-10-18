@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab1: Punkt 26&#10;&#10;(Dla zaawansowanych) Zmień kod odpowiedzialny za konwersję argumentów oraz wyświetlanie kierunków, tak by korzystał z interfejsu stream dostępnego w Javie 8.">
-      <change afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
+    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab1: dodaj linka do repozytorium git">
+      <change afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/Vector2d.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/World.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +27,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -172,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666006217529</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Lab1: dodaj linka do repozytorium git">
+      <created>1666006674989</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1666006674989</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -201,6 +214,7 @@
     <MESSAGE value="Lab1: Punkt 20&#10;&#10;W tym samym pliku dodaj sekcję: ..." />
     <MESSAGE value="Lab1: Punkt 21&#10;&#10;W tym samym pliku dodaj sekcję: ..." />
     <MESSAGE value="Lab1: Punkt 26&#10;&#10;(Dla zaawansowanych) Zmień kod odpowiedzialny za konwersję argumentów oraz wyświetlanie kierunków, tak by korzystał z interfejsu stream dostępnego w Javie 8." />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab1: Punkt 26&#10;&#10;(Dla zaawansowanych) Zmień kod odpowiedzialny za konwersję argumentów oraz wyświetlanie kierunków, tak by korzystał z interfejsu stream dostępnego w Javie 8." />
+    <MESSAGE value="Lab1: dodaj linka do repozytorium git" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab1: dodaj linka do repozytorium git" />
   </component>
 </project>
