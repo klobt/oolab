@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab2: MapDirection: sprawdzenie działania metod">
-      <change afterPath="$PROJECT_DIR$/src/test/java/MapDirectionTest.java" afterDir="false" />
+    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab2: implementacja testów dla MapDirection">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Vector2dTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +50,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.MapDirectionTest">
+  <component name="RunManager" selected="Gradle.Vector2dTest">
     <configuration name="World" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="agh.ics.oop.World" />
       <module name="oolab.main" />
@@ -88,8 +88,32 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="Vector2dTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;Vector2dTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Vector2dTest" />
         <item itemvalue="Gradle.MapDirectionTest" />
         <item itemvalue="Application.World" />
       </list>
@@ -244,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666114248342</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Lab2: implementacja testów dla MapDirection">
+      <created>1666114701899</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1666114701899</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -279,6 +310,7 @@
     <MESSAGE value="Lab2: MoveDirection: implementacja" />
     <MESSAGE value="Lab2: MapDirection: implementacja" />
     <MESSAGE value="Lab2: MapDirection: sprawdzenie działania metod" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab2: MapDirection: sprawdzenie działania metod" />
+    <MESSAGE value="Lab2: implementacja testów dla MapDirection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab2: implementacja testów dla MapDirection" />
   </component>
 </project>
