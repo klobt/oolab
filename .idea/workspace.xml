@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab2: implementacja testów dla MapDirection">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Vector2dTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab2: implementacja testów dla Vector2d" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -275,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666114701899</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Lab2: implementacja testów dla Vector2d">
+      <created>1666207238987</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1666207238987</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -311,6 +315,7 @@
     <MESSAGE value="Lab2: MapDirection: implementacja" />
     <MESSAGE value="Lab2: MapDirection: sprawdzenie działania metod" />
     <MESSAGE value="Lab2: implementacja testów dla MapDirection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab2: implementacja testów dla MapDirection" />
+    <MESSAGE value="Lab2: implementacja testów dla Vector2d" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab2: implementacja testów dla Vector2d" />
   </component>
 </project>

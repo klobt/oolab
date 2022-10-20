@@ -102,7 +102,7 @@ public class Vector2dTest {
             int y1 = random.nextInt();
             int x2 = random.nextInt();
             int y2 = random.nextInt();
-            assertEquals(new Vector2d(x1, y1).substract(new Vector2d(x2, y2)), new Vector2d(x1 - x2, y1 - y2));
+            assertEquals(new Vector2d(x1, y1).subtract(new Vector2d(x2, y2)), new Vector2d(x1 - x2, y1 - y2));
         }
     }
 
