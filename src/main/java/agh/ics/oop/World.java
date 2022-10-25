@@ -30,6 +30,9 @@ public class World {
         System.out.println(mapDirection.next());
         System.out.println(mapDirection.previous());
         System.out.println(mapDirection.toUnitVector());
+
+        Animal animal = new Animal();
+        System.out.println(animal.getPosition());
     }
     private static void run(Stream<Direction> directionStream) {
         System.out.println("Start");
