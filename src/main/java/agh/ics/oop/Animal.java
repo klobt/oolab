@@ -17,6 +17,10 @@ public class Animal {
         return position;
     }
 
+    public MapDirection getOrientation() {
+        return orientation;
+    }
+
     private void setPosition(Vector2d position) {
         if (position.x >= 0 && position.x <= 4 && position.y >= 0 && position.y <= 4) {
             this.position = position;

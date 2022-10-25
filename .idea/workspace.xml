@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab3: Punkt 6.&#10;&#10;Utwórz klasę OptionsParser a w niej metodę parse, która:&#10;- akceptuje tablicę łańcuchów znaków,&#10;- zwraca tablicę kierunków ruchu MoveDirection,&#10;- zamienia łańcuchy f oraz forward na kierunek MoveDirection.FORWARD, b oraz backward na kierunek MoveDirection.BACKWARD, itd.&#10;- dla nieznanych kierunków nie umieszcza ich w tablicy wynikowej (tablica wynikowa powinna zawierać wyłącznie prawidłowe kierunki).">
+    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab3: Punkt 7.&#10;&#10;Zmodyfikuj metodę main tak, aby korzystając z klasy OptionsParser umożliwiała sterowanie zwierzęciem.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/AnimalTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/World.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/Animal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +51,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.World">
+  <component name="RunManager" selected="Gradle.AnimalTest">
     <configuration name="World" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="agh.ics.oop.World" />
       <module name="oolab.main" />
@@ -64,6 +65,52 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="AnimalTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;AnimalTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="AnimalTest.integrationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;AnimalTest.integrationTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="MapDirectionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -113,11 +160,15 @@
     </configuration>
     <list>
       <item itemvalue="Application.World" />
+      <item itemvalue="Gradle.AnimalTest" />
+      <item itemvalue="Gradle.AnimalTest.integrationTest" />
       <item itemvalue="Gradle.MapDirectionTest" />
       <item itemvalue="Gradle.Vector2dTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AnimalTest" />
+        <item itemvalue="Gradle.AnimalTest.integrationTest" />
         <item itemvalue="Gradle.Vector2dTest" />
         <item itemvalue="Gradle.MapDirectionTest" />
         <item itemvalue="Application.World" />
@@ -336,7 +387,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666718541406</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Lab3: Punkt 7.&#10;&#10;Zmodyfikuj metodę main tak, aby korzystając z klasy OptionsParser umożliwiała sterowanie zwierzęciem.">
+      <created>1666718755437</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1666718755437</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -351,7 +409,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Lab1: Punkt 5.&#10;&#10;Zaimplementuj metodę main tak aby wyświetlały się dwa komunikaty:&#10;- system wystartował&#10;- system zakończył działanie" />
     <MESSAGE value="Lab1: Punkt 7.&#10;&#10;Dodaj metodę statyczną run, która jest wywoływana pomiędzy tymi komunikatami." />
     <MESSAGE value="Lab1: Punkt 8.&#10;&#10;Metoda run powinna informować o tym, że zwierzak idzie do przodu." />
     <MESSAGE value="Lab1: Punkt 11.&#10;&#10;Po komunikacie o poruszaniu się do przodu wypisz w konsoli wartości wszystkich argumentów tej metody oddzielone przecinkami." />
@@ -376,6 +433,7 @@
     <MESSAGE value="Lab3: Punkt 4&#10;&#10;Dodaj do klasy Animal metodę move(MoveDirection direction), która:&#10;- Dla kierunków RIGHT i LEFT zmienia orientację zwierzęcia na mapie, np. kiedy zwierzę jest w pozycji NORTH a zmiana kierunku to RIGHT to orientacja zwierzęcia powinna wynosić EAST.&#10;- Dla kierunków FORWARD i BACKWARD zmienia pozycję zwierzęcia o 1 pole, uwzględniając jego orientację, np. kiedy zwierzę jest na pozycji (2,2) i jego orientacja to NORTH, to po ruchu FORWARD jego pozycja to (2,3).&#10;- Uniemożliwia wyjechanie poza mapę, która ustalona jest od pozycji (0,0) do pozycji (4,4) (pięć na pięć pól). W sytuacji, w której zwierzę miałoby wyjść poza mapę, wywołanie move nie ma żadnego skutku." />
     <MESSAGE value="Lab3: Punkt 5.&#10;&#10;W metodzie main dodaj wywołania, które przetestują poprawność implementacji, np. po ciągu wywołań: RIGHT, FORWARD, FORWARD, FORWARD pozycja zwierzęcia powinna wynosić (4,2) a orientacja EAST." />
     <MESSAGE value="Lab3: Punkt 6.&#10;&#10;Utwórz klasę OptionsParser a w niej metodę parse, która:&#10;- akceptuje tablicę łańcuchów znaków,&#10;- zwraca tablicę kierunków ruchu MoveDirection,&#10;- zamienia łańcuchy f oraz forward na kierunek MoveDirection.FORWARD, b oraz backward na kierunek MoveDirection.BACKWARD, itd.&#10;- dla nieznanych kierunków nie umieszcza ich w tablicy wynikowej (tablica wynikowa powinna zawierać wyłącznie prawidłowe kierunki)." />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab3: Punkt 6.&#10;&#10;Utwórz klasę OptionsParser a w niej metodę parse, która:&#10;- akceptuje tablicę łańcuchów znaków,&#10;- zwraca tablicę kierunków ruchu MoveDirection,&#10;- zamienia łańcuchy f oraz forward na kierunek MoveDirection.FORWARD, b oraz backward na kierunek MoveDirection.BACKWARD, itd.&#10;- dla nieznanych kierunków nie umieszcza ich w tablicy wynikowej (tablica wynikowa powinna zawierać wyłącznie prawidłowe kierunki)." />
+    <MESSAGE value="Lab3: Punkt 7.&#10;&#10;Zmodyfikuj metodę main tak, aby korzystając z klasy OptionsParser umożliwiała sterowanie zwierzęciem." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab3: Punkt 7.&#10;&#10;Zmodyfikuj metodę main tak, aby korzystając z klasy OptionsParser umożliwiała sterowanie zwierzęciem." />
   </component>
 </project>
