@@ -16,4 +16,19 @@ public class Animal {
     public Vector2d getPosition() {
         return position;
     }
+
+    private void setPosition(Vector2d position) {
+        if (position.x >= 0 && position.x <= 4 && position.y >= 0 && position.y <= 4) {
+            this.position = position;
+        }
+    }
+
+    public void move(MoveDirection direction) {
+        switch (direction) {
+            case RIGHT -> orientation = orientation.next();
+            case LEFT -> orientation = orientation.previous();
+            case FORWARD -> setPosition(position.add(orientation.toUnitVector()));
+            case BACKWARD -> setPosition(position.subtract(orientation.toUnitVector()));
+        }
+    }
 }

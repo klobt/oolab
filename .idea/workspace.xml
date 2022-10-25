@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab3: Utwórz klasę Animal&#10;&#10;która:&#10;- określa początkową orientację zwierzęcia jako NORTH,&#10;- określa początkowe położenie zwierzęcia na mapie jako Vector2d(2,2) (przyjmij, że zwierzę znajduje się w pierwszej ćwiartce układu współrzędnych, a północ jest tożsama z kierunkiem wyznaczanym przez rosnące wartości na osi OY),&#10;- definiuje metodę toString(), która w reprezentacji łańcuchowej zawiera informacje o położeniu zwierzęcia (pozycję oraz orientację),&#10;- definiuje metodą boolean isAt(Vector2d position), która zwraca prawdę, jeśli zwierzę znajduje się na pozycji position.&#10;- definuje swoje pola jako prywatne.">
+    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab3: Punkt 4&#10;&#10;Dodaj do klasy Animal metodę move(MoveDirection direction), która:&#10;- Dla kierunków RIGHT i LEFT zmienia orientację zwierzęcia na mapie, np. kiedy zwierzę jest w pozycji NORTH a zmiana kierunku to RIGHT to orientacja zwierzęcia powinna wynosić EAST.&#10;- Dla kierunków FORWARD i BACKWARD zmienia pozycję zwierzęcia o 1 pole, uwzględniając jego orientację, np. kiedy zwierzę jest na pozycji (2,2) i jego orientacja to NORTH, to po ruchu FORWARD jego pozycja to (2,3).&#10;- Uniemożliwia wyjechanie poza mapę, która ustalona jest od pozycji (0,0) do pozycji (4,4) (pięć na pięć pól). W sytuacji, w której zwierzę miałoby wyjść poza mapę, wywołanie move nie ma żadnego skutku.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/World.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -304,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666717435374</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Lab3: Punkt 3&#10;&#10;Utwórz lub zmodyfikuj klasę World, która w metodzie main stworzy zwierzę i wyświetli w konsoli jego pozycję">
+      <created>1666717511207</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1666717511207</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -319,7 +325,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Lab1: Punkt 2.&#10;&#10;Utwórz nowy projekt typu Gradle -&gt; Java (!nie Java -&gt; Java) o nazwie oolab." />
     <MESSAGE value="Lab1: Punkt 3.&#10;&#10;W katalogu src/main/java/ utwórz pakiet agh.ics.oop (ppm na src/main/java -&gt; New package)." />
     <MESSAGE value="Lab1: Punkt 4.&#10;&#10;W pakiecie agh.ics.oop utwórz klasę World ze statyczną funkcją main." />
     <MESSAGE value="Lab1: Punkt 5.&#10;&#10;Zaimplementuj metodę main tak aby wyświetlały się dwa komunikaty:&#10;- system wystartował&#10;- system zakończył działanie" />
@@ -343,6 +348,8 @@
     <MESSAGE value="Lab2: implementacja testów dla Vector2d" />
     <MESSAGE value="Lab2: Vector2d: popraw substract -&gt; subtract" />
     <MESSAGE value="Lab3: Utwórz klasę Animal&#10;&#10;która:&#10;- określa początkową orientację zwierzęcia jako NORTH,&#10;- określa początkowe położenie zwierzęcia na mapie jako Vector2d(2,2) (przyjmij, że zwierzę znajduje się w pierwszej ćwiartce układu współrzędnych, a północ jest tożsama z kierunkiem wyznaczanym przez rosnące wartości na osi OY),&#10;- definiuje metodę toString(), która w reprezentacji łańcuchowej zawiera informacje o położeniu zwierzęcia (pozycję oraz orientację),&#10;- definiuje metodą boolean isAt(Vector2d position), która zwraca prawdę, jeśli zwierzę znajduje się na pozycji position.&#10;- definuje swoje pola jako prywatne." />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab3: Utwórz klasę Animal&#10;&#10;która:&#10;- określa początkową orientację zwierzęcia jako NORTH,&#10;- określa początkowe położenie zwierzęcia na mapie jako Vector2d(2,2) (przyjmij, że zwierzę znajduje się w pierwszej ćwiartce układu współrzędnych, a północ jest tożsama z kierunkiem wyznaczanym przez rosnące wartości na osi OY),&#10;- definiuje metodę toString(), która w reprezentacji łańcuchowej zawiera informacje o położeniu zwierzęcia (pozycję oraz orientację),&#10;- definiuje metodą boolean isAt(Vector2d position), która zwraca prawdę, jeśli zwierzę znajduje się na pozycji position.&#10;- definuje swoje pola jako prywatne." />
+    <MESSAGE value="Lab3: Punkt 3&#10;&#10;Utwórz lub zmodyfikuj klasę World, która w metodzie main stworzy zwierzę i wyświetli w konsoli jego pozycję" />
+    <MESSAGE value="Lab3: Punkt 4&#10;&#10;Dodaj do klasy Animal metodę move(MoveDirection direction), która:&#10;- Dla kierunków RIGHT i LEFT zmienia orientację zwierzęcia na mapie, np. kiedy zwierzę jest w pozycji NORTH a zmiana kierunku to RIGHT to orientacja zwierzęcia powinna wynosić EAST.&#10;- Dla kierunków FORWARD i BACKWARD zmienia pozycję zwierzęcia o 1 pole, uwzględniając jego orientację, np. kiedy zwierzę jest na pozycji (2,2) i jego orientacja to NORTH, to po ruchu FORWARD jego pozycja to (2,3).&#10;- Uniemożliwia wyjechanie poza mapę, która ustalona jest od pozycji (0,0) do pozycji (4,4) (pięć na pięć pól). W sytuacji, w której zwierzę miałoby wyjść poza mapę, wywołanie move nie ma żadnego skutku." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab3: Punkt 4&#10;&#10;Dodaj do klasy Animal metodę move(MoveDirection direction), która:&#10;- Dla kierunków RIGHT i LEFT zmienia orientację zwierzęcia na mapie, np. kiedy zwierzę jest w pozycji NORTH a zmiana kierunku to RIGHT to orientacja zwierzęcia powinna wynosić EAST.&#10;- Dla kierunków FORWARD i BACKWARD zmienia pozycję zwierzęcia o 1 pole, uwzględniając jego orientację, np. kiedy zwierzę jest na pozycji (2,2) i jego orientacja to NORTH, to po ruchu FORWARD jego pozycja to (2,3).&#10;- Uniemożliwia wyjechanie poza mapę, która ustalona jest od pozycji (0,0) do pozycji (4,4) (pięć na pięć pól). W sytuacji, w której zwierzę miałoby wyjść poza mapę, wywołanie move nie ma żadnego skutku." />
   </component>
 </project>
