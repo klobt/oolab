@@ -33,6 +33,11 @@ public class World {
 
         Animal animal = new Animal();
         System.out.println(animal.getPosition());
+        animal.move(MoveDirection.RIGHT);
+        animal.move(MoveDirection.FORWARD);
+        animal.move(MoveDirection.FORWARD);
+        animal.move(MoveDirection.FORWARD);
+        System.out.println(animal);
     }
     private static void run(Stream<Direction> directionStream) {
         System.out.println("Start");
