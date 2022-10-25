@@ -38,6 +38,11 @@ public class World {
         animal.move(MoveDirection.FORWARD);
         animal.move(MoveDirection.FORWARD);
         System.out.println(animal);
+
+        for (MoveDirection direction : new OptionsParser().parse(arguments)) {
+            animal.move(direction);
+        }
+        System.out.println(animal);
     }
     private static void run(Stream<Direction> directionStream) {
         System.out.println("Start");

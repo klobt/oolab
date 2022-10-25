@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab3: Punkt 5.&#10;&#10;W metodzie main dodaj wywołania, które przetestują poprawność implementacji, np. po ciągu wywołań: RIGHT, FORWARD, FORWARD, FORWARD pozycja zwierzęcia powinna wynosić (4,2) a orientacja EAST.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/OptionsParser.java" afterDir="false" />
+    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab3: Punkt 6.&#10;&#10;Utwórz klasę OptionsParser a w niej metodę parse, która:&#10;- akceptuje tablicę łańcuchów znaków,&#10;- zwraca tablicę kierunków ruchu MoveDirection,&#10;- zamienia łańcuchy f oraz forward na kierunek MoveDirection.FORWARD, b oraz backward na kierunek MoveDirection.BACKWARD, itd.&#10;- dla nieznanych kierunków nie umieszcza ich w tablicy wynikowej (tablica wynikowa powinna zawierać wyłącznie prawidłowe kierunki).">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/World.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +54,7 @@
     <configuration name="World" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="agh.ics.oop.World" />
       <module name="oolab.main" />
-      <option name="PROGRAM_PARAMETERS" value="f f l l r r b f" />
+      <option name="PROGRAM_PARAMETERS" value="f f l l r r b f b" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="agh.ics.oop.*" />
@@ -111,6 +111,11 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.World" />
+      <item itemvalue="Gradle.MapDirectionTest" />
+      <item itemvalue="Gradle.Vector2dTest" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Vector2dTest" />
@@ -324,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666718192203</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Lab3: Punkt 6.&#10;&#10;Utwórz klasę OptionsParser a w niej metodę parse, która:&#10;- akceptuje tablicę łańcuchów znaków,&#10;- zwraca tablicę kierunków ruchu MoveDirection,&#10;- zamienia łańcuchy f oraz forward na kierunek MoveDirection.FORWARD, b oraz backward na kierunek MoveDirection.BACKWARD, itd.&#10;- dla nieznanych kierunków nie umieszcza ich w tablicy wynikowej (tablica wynikowa powinna zawierać wyłącznie prawidłowe kierunki).">
+      <created>1666718541406</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1666718541406</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -339,7 +351,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Lab1: Punkt 4.&#10;&#10;W pakiecie agh.ics.oop utwórz klasę World ze statyczną funkcją main." />
     <MESSAGE value="Lab1: Punkt 5.&#10;&#10;Zaimplementuj metodę main tak aby wyświetlały się dwa komunikaty:&#10;- system wystartował&#10;- system zakończył działanie" />
     <MESSAGE value="Lab1: Punkt 7.&#10;&#10;Dodaj metodę statyczną run, która jest wywoływana pomiędzy tymi komunikatami." />
     <MESSAGE value="Lab1: Punkt 8.&#10;&#10;Metoda run powinna informować o tym, że zwierzak idzie do przodu." />
@@ -364,6 +375,7 @@
     <MESSAGE value="Lab3: Punkt 3&#10;&#10;Utwórz lub zmodyfikuj klasę World, która w metodzie main stworzy zwierzę i wyświetli w konsoli jego pozycję" />
     <MESSAGE value="Lab3: Punkt 4&#10;&#10;Dodaj do klasy Animal metodę move(MoveDirection direction), która:&#10;- Dla kierunków RIGHT i LEFT zmienia orientację zwierzęcia na mapie, np. kiedy zwierzę jest w pozycji NORTH a zmiana kierunku to RIGHT to orientacja zwierzęcia powinna wynosić EAST.&#10;- Dla kierunków FORWARD i BACKWARD zmienia pozycję zwierzęcia o 1 pole, uwzględniając jego orientację, np. kiedy zwierzę jest na pozycji (2,2) i jego orientacja to NORTH, to po ruchu FORWARD jego pozycja to (2,3).&#10;- Uniemożliwia wyjechanie poza mapę, która ustalona jest od pozycji (0,0) do pozycji (4,4) (pięć na pięć pól). W sytuacji, w której zwierzę miałoby wyjść poza mapę, wywołanie move nie ma żadnego skutku." />
     <MESSAGE value="Lab3: Punkt 5.&#10;&#10;W metodzie main dodaj wywołania, które przetestują poprawność implementacji, np. po ciągu wywołań: RIGHT, FORWARD, FORWARD, FORWARD pozycja zwierzęcia powinna wynosić (4,2) a orientacja EAST." />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab3: Punkt 5.&#10;&#10;W metodzie main dodaj wywołania, które przetestują poprawność implementacji, np. po ciągu wywołań: RIGHT, FORWARD, FORWARD, FORWARD pozycja zwierzęcia powinna wynosić (4,2) a orientacja EAST." />
+    <MESSAGE value="Lab3: Punkt 6.&#10;&#10;Utwórz klasę OptionsParser a w niej metodę parse, która:&#10;- akceptuje tablicę łańcuchów znaków,&#10;- zwraca tablicę kierunków ruchu MoveDirection,&#10;- zamienia łańcuchy f oraz forward na kierunek MoveDirection.FORWARD, b oraz backward na kierunek MoveDirection.BACKWARD, itd.&#10;- dla nieznanych kierunków nie umieszcza ich w tablicy wynikowej (tablica wynikowa powinna zawierać wyłącznie prawidłowe kierunki)." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab3: Punkt 6.&#10;&#10;Utwórz klasę OptionsParser a w niej metodę parse, która:&#10;- akceptuje tablicę łańcuchów znaków,&#10;- zwraca tablicę kierunków ruchu MoveDirection,&#10;- zamienia łańcuchy f oraz forward na kierunek MoveDirection.FORWARD, b oraz backward na kierunek MoveDirection.BACKWARD, itd.&#10;- dla nieznanych kierunków nie umieszcza ich w tablicy wynikowej (tablica wynikowa powinna zawierać wyłącznie prawidłowe kierunki)." />
   </component>
 </project>
