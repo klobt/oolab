@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab4: Punkt 3.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/RectangularMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/SimulationEngine.java" afterDir="false" />
+    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab4: Punkt 6.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Lab4Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/World.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,21 +57,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.World">
-    <configuration name="World" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="agh.ics.oop.World" />
-      <module name="oolab.main" />
-      <option name="PROGRAM_PARAMETERS" value="f b r l f f r r f f f f f f f f" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="agh.ics.oop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Gradle.Lab4Test">
     <configuration name="AnimalTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -112,6 +95,29 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;AnimalTest.integrationTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Lab4Test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;Lab4Test&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -168,7 +174,7 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.World" />
+      <item itemvalue="Gradle.Lab4Test" />
       <item itemvalue="Gradle.AnimalTest" />
       <item itemvalue="Gradle.AnimalTest.integrationTest" />
       <item itemvalue="Gradle.MapDirectionTest" />
@@ -176,11 +182,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Lab4Test" />
         <item itemvalue="Gradle.AnimalTest.integrationTest" />
         <item itemvalue="Gradle.AnimalTest" />
         <item itemvalue="Gradle.Vector2dTest" />
         <item itemvalue="Gradle.MapDirectionTest" />
-        <item itemvalue="Application.World" />
       </list>
     </recent_temporary>
   </component>
@@ -438,7 +444,42 @@
       <option name="project" value="LOCAL" />
       <updated>1668434971741</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Lab4: Punkt 3.">
+      <created>1668448617296</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1668448617296</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Lab4: Punkt 4.">
+      <created>1668448634289</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1668448634289</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Lab4: Punkt 5.">
+      <created>1668448647259</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1668448647259</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Lab4: Punkt 6.">
+      <created>1668448668618</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1668448668618</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Lab4: Punkt 6.">
+      <created>1668448697756</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1668448697756</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -453,8 +494,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Lab1: Punkt 15&#10;&#10;Poruszanie się oraz zmiana kierunku ma być oznajmiana odpowiednim komunikatem. Program powinien akceptować dowolną liczbę argumentów. Przykładowo wprowadzenie sekwencji f f r l powinno dać w wyniku następujące komunikaty:&#10;- Start&#10;- Zwierzak idzie do przodu&#10;- Zwierzak idzie do przodu&#10;- Zwierzak skręca w prawo&#10;- Zwierzak skręca w lewo&#10;- Stop" />
-    <MESSAGE value="Lab1: Punkt 16&#10;&#10;Zmodyfikuj program w ten sposób, aby metoda run nie akceptowała tablicy łańcuchów znaków, lecz tablicę wartości typu wyliczeniowego (enum). Zamiana łańcuchów znaków powinna być realizowana przez metodę wywoływaną w funkcji main przed wywołaniem metody run, natomiast typ wyliczeniowy powinien być zdefiniowany w osobnym pliku (Direction.java) w pakiecie agh.ics.oop." />
     <MESSAGE value="Lab1: Punkt 19&#10;&#10;W pliku build.gradle w sekcji plugins dodaj linię: ...." />
     <MESSAGE value="Lab1: Punkt 20&#10;&#10;W tym samym pliku dodaj sekcję: ..." />
     <MESSAGE value="Lab1: Punkt 21&#10;&#10;W tym samym pliku dodaj sekcję: ..." />
@@ -476,8 +515,10 @@
     <MESSAGE value="Lab3: Punkt 7.&#10;&#10;Zmodyfikuj metodę main tak, aby korzystając z klasy OptionsParser umożliwiała sterowanie zwierzęciem." />
     <MESSAGE value="Lab3: Punkt 9.&#10;&#10;Napisz testy integracyjne weryfiujące poprawność implementacji. Uwzględnij:&#10;- czy zwierzę ma właściwą orientację,&#10;- czy zwierzę przemieszcza się na właściwe pozycje,&#10;- czy zwierzę nie wychodzi poza mapę,&#10;- czy dane wejściowe podane jako tablica łańcuchów znaków są poprawnie interpretowane." />
     <MESSAGE value="Lab3: Punkt 10." />
-    <MESSAGE value="Lab4: Punkt 4." />
     <MESSAGE value="Lab4: Punkt 3." />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab4: Punkt 3." />
+    <MESSAGE value="Lab4: Punkt 4." />
+    <MESSAGE value="Lab4: Punkt 5." />
+    <MESSAGE value="Lab4: Punkt 6." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab4: Punkt 6." />
   </component>
 </project>
