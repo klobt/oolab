@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab4: Podpunkt 3.">
+    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab3: Punkt 10.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/Animal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,16 +38,13 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2GG7KV4JFG8fZxUOleqwf5ghueR" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
@@ -410,14 +406,7 @@
       <option name="project" value="LOCAL" />
       <updated>1666720132630</updated>
     </task>
-    <task id="LOCAL-00033" summary="Lab4: Dodaj interfejsy z katalogu lab4">
-      <created>1667930827100</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1667930827100</updated>
-    </task>
-    <option name="localTasksCounter" value="34" />
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -432,7 +421,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Lab1: Punkt 11.&#10;&#10;Po komunikacie o poruszaniu się do przodu wypisz w konsoli wartości wszystkich argumentów tej metody oddzielone przecinkami." />
+    <MESSAGE value="Lab1: Punkt 14.&#10;&#10;Zmodyfikuj program tak aby interpretował wprowadzone argument:&#10;- f - oznacza, że zwierzak idzie do przodu,&#10;- b - oznacza, że zwierzak idzie do tyłu,&#10;- r - oznacza, że zwierzak skręca w prawo,&#10;- l - oznacza, że zwierzak skręca w lewo,&#10;- pozostałe argumenty powinny być ignorowane." />
+    <MESSAGE value="Lab1: Punkt 15&#10;&#10;Poruszanie się oraz zmiana kierunku ma być oznajmiana odpowiednim komunikatem. Program powinien akceptować dowolną liczbę argumentów. Przykładowo wprowadzenie sekwencji f f r l powinno dać w wyniku następujące komunikaty:&#10;- Start&#10;- Zwierzak idzie do przodu&#10;- Zwierzak idzie do przodu&#10;- Zwierzak skręca w prawo&#10;- Zwierzak skręca w lewo&#10;- Stop" />
     <MESSAGE value="Lab1: Punkt 16&#10;&#10;Zmodyfikuj program w ten sposób, aby metoda run nie akceptowała tablicy łańcuchów znaków, lecz tablicę wartości typu wyliczeniowego (enum). Zamiana łańcuchów znaków powinna być realizowana przez metodę wywoływaną w funkcji main przed wywołaniem metody run, natomiast typ wyliczeniowy powinien być zdefiniowany w osobnym pliku (Direction.java) w pakiecie agh.ics.oop." />
     <MESSAGE value="Lab1: Punkt 19&#10;&#10;W pliku build.gradle w sekcji plugins dodaj linię: ...." />
     <MESSAGE value="Lab1: Punkt 20&#10;&#10;W tym samym pliku dodaj sekcję: ..." />
@@ -455,9 +446,6 @@
     <MESSAGE value="Lab3: Punkt 7.&#10;&#10;Zmodyfikuj metodę main tak, aby korzystając z klasy OptionsParser umożliwiała sterowanie zwierzęciem." />
     <MESSAGE value="Lab3: Punkt 9.&#10;&#10;Napisz testy integracyjne weryfiujące poprawność implementacji. Uwzględnij:&#10;- czy zwierzę ma właściwą orientację,&#10;- czy zwierzę przemieszcza się na właściwe pozycje,&#10;- czy zwierzę nie wychodzi poza mapę,&#10;- czy dane wejściowe podane jako tablica łańcuchów znaków są poprawnie interpretowane." />
     <MESSAGE value="Lab3: Punkt 10." />
-    <MESSAGE value="Lab4: Dodaj interfejsy" />
-    <MESSAGE value="Lab4: Dodaj interfejsy z katalogu lab4" />
-    <MESSAGE value="Lab4: Podpunkt 3." />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab4: Podpunkt 3." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab3: Punkt 10." />
   </component>
 </project>
