@@ -50,6 +50,11 @@ public class World {
         IEngine engine = new SimulationEngine(directions, map, positions);
         engine.run();
         System.out.println(map);
+
+        IWorldMap grassField = new GrassField(10);
+        IEngine grassEngine = new SimulationEngine(directions, grassField, positions);
+        grassEngine.run();
+        System.out.println(grassField);
     }
     private static void run(Stream<Direction> directionStream) {
         System.out.println("Start");
