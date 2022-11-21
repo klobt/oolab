@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab5: Punkt 3.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/GrassFieldTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/RectangularMapTest.java" afterDir="false" />
+    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab5: Punkt 5. - 9.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/AbstractWorldMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/GrassField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/GrassField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/RectangularMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/RectangularMap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +59,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.GrassFieldTest">
+  <component name="RunManager" selected="Application.World">
     <configuration name="World" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="agh.ics.oop.World" />
       <module name="oolab.main" />
@@ -173,9 +174,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.RectangularMapTest" />
         <item itemvalue="Gradle.GrassFieldTest" />
         <item itemvalue="Gradle.GrassFieldTest.objectAtTest" />
-        <item itemvalue="Gradle.RectangularMapTest" />
         <item itemvalue="Gradle.RectangularMapTest.canMoveToTest" />
         <item itemvalue="Application.World" />
       </list>
@@ -498,7 +499,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668538116085</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Lab5: Punkt 4.">
+      <created>1669036706000</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1669036706000</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -513,8 +521,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Lab1: dodaj linka do repozytorium git" />
-    <MESSAGE value="Lab2: Vector2d: implementacja klasy" />
     <MESSAGE value="Lab2: Vector2d: sprawdzenie działania" />
     <MESSAGE value="Lab2: MoveDirection: implementacja" />
     <MESSAGE value="Lab2: MapDirection: implementacja" />
@@ -538,7 +544,9 @@
     <MESSAGE value="Lab5: Punkt 1." />
     <MESSAGE value="Lab5: Punkt 2." />
     <MESSAGE value="Lab5: Punkt 3." />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab5: Punkt 3." />
+    <MESSAGE value="Lab5: Punkt 4." />
+    <MESSAGE value="Lab5: Punkt 5. - 9." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab5: Punkt 5. - 9." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

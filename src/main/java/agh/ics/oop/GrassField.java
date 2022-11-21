@@ -1,12 +1,9 @@
 package agh.ics.oop;
 
 import java.util.Random;
-import java.util.Vector;
 
-public class GrassField implements IWorldMap {
+public class GrassField extends AbstractWorldMap {
     private Grass[] grassArray;
-    private Vector<Animal> animals;
-    private MapVisualizer mapVisualizer;
 
     private Vector2d nextPosition(Random random, int n, int i) {
         Vector2d proposed = new Vector2d(
@@ -22,41 +19,19 @@ public class GrassField implements IWorldMap {
     }
 
     public GrassField(int n) {
+        super();
         Random random = new Random();
         this.grassArray = new Grass[n];
         for (int i = 0; i < n; i++) {
             this.grassArray[i] = new Grass(nextPosition(random, n, i));
         }
-        this.animals = new Vector<Animal>();
-        this.mapVisualizer = new MapVisualizer(this);
-    }
-
-    @Override
-    public boolean canMoveTo(Vector2d position) {
-        return objectAt(position) == null;
-    }
-
-    @Override
-    public boolean place(Animal animal) {
-        if (canMoveTo(animal.getPosition())) {
-            animals.add(animal);
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    @Override
-    public boolean isOccupied(Vector2d position) {
-        return objectAt(position) != null;
     }
 
     @Override
     public Object objectAt(Vector2d position) {
-        for (Animal animal : animals) {
-            if (animal.isAt(position)) {
-                return animal;
-            }
+        Object object = super.objectAt(position);
+        if (object != null) {
+            return object;
         }
         for (Grass grass : grassArray) {
             if (grass.getPosition().equals(position)) {
@@ -67,23 +42,32 @@ public class GrassField implements IWorldMap {
     }
 
     @Override
-    public String toString() {
-        int llX = Integer.MAX_VALUE;
-        int llY = Integer.MAX_VALUE;
-        int urX = Integer.MIN_VALUE;
-        int urY = Integer.MIN_VALUE;
+    public Vector2d lowerLeft() {
+        int x = Integer.MAX_VALUE;
+        int y = Integer.MAX_VALUE;
         for (Animal animal : animals) {
-            llX = Math.min(llX, animal.getPosition().x);
-            llY = Math.min(llY, animal.getPosition().y);
-            urX = Math.max(urX, animal.getPosition().x);
-            urY = Math.max(urY, animal.getPosition().y);
+            x = Math.min(x, animal.getPosition().x);
+            y = Math.min(y, animal.getPosition().y);
         }
         for (Grass grass : grassArray) {
-            llX = Math.min(llX, grass.getPosition().x);
-            llY = Math.min(llY, grass.getPosition().y);
-            urX = Math.max(urX, grass.getPosition().x);
-            urY = Math.max(urY, grass.getPosition().y);
+            x = Math.min(x, grass.getPosition().x);
+            y = Math.min(y, grass.getPosition().y);
         }
-        return mapVisualizer.draw(new Vector2d(llX, llY), new Vector2d(urX, urY));
+        return new Vector2d(x, y);
+    }
+
+    @Override
+    public Vector2d upperRight() {
+        int x = Integer.MIN_VALUE;
+        int y = Integer.MIN_VALUE;
+        for (Animal animal : animals) {
+            x = Math.max(x, animal.getPosition().x);
+            y = Math.max(y, animal.getPosition().y);
+        }
+        for (Grass grass : grassArray) {
+            x = Math.max(x, grass.getPosition().x);
+            y = Math.max(y, grass.getPosition().y);
+        }
+        return new Vector2d(x, y);
     }
 }
