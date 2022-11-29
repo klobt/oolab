@@ -1,13 +1,14 @@
 package agh.ics.oop;
 
-import java.util.Vector;
+import java.util.Map;
+import java.util.HashMap;
 
 public abstract class AbstractWorldMap implements IWorldMap {
-    protected Vector<Animal> animals;
+    protected Map<Vector2d, Animal> animals;
     protected MapVisualizer mapVisualizer;
 
     public AbstractWorldMap() {
-        this.animals = new Vector<Animal>();
+        this.animals = new HashMap<Vector2d, Animal>();
         this.mapVisualizer = new MapVisualizer(this);
     }
 
@@ -19,7 +20,7 @@ public abstract class AbstractWorldMap implements IWorldMap {
     @Override
     public boolean place(Animal animal) {
         if (canMoveTo(animal.getPosition())) {
-            animals.add(animal);
+            animals.put(animal.getPosition(), animal);
             return true;
         } else {
             return false;
@@ -33,12 +34,7 @@ public abstract class AbstractWorldMap implements IWorldMap {
 
     @Override
     public Object objectAt(Vector2d position) {
-        for (Animal animal : animals) {
-            if (animal.isAt(position)) {
-                return animal;
-            }
-        }
-        return null;
+        return animals.get(position);
     }
 
     protected abstract Vector2d lowerLeft();
