@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab6: Implementacja interfejsu IPositionChangeObserver">
+    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Dodaj abstrakcyjną klasę dla Animal i Grass">
+      <change afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/MapBoundary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/MapObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/AbstractWorldMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/AbstractWorldMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/Grass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/Grass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/GrassField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/GrassField.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +36,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -47,7 +50,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dde6bfe8d5ef929392dc07554dff9cc26358e29c" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -64,59 +67,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.General"
   }
-}</component>
-  <component name="RunManager" selected="Gradle.Lab4Test">
-    <configuration name="GrassFieldTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;GrassFieldTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="GrassFieldTest.objectAtTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;GrassFieldTest.objectAtTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+}]]></component>
+  <component name="RunManager" selected="Gradle.Tests in 'oolab.test'">
     <configuration name="Lab4Test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -131,6 +89,29 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;Lab4Test&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MapDirectionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;MapDirectionTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -163,7 +144,28 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RectangularMapTest.canMoveToTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'oolab.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Vector2dTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -176,7 +178,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;RectangularMapTest.canMoveToTest&quot;" />
+            <option value="&quot;Vector2dTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -187,19 +189,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Gradle.MapDirectionTest" />
+      <item itemvalue="Gradle.Tests in 'oolab.test'" />
+      <item itemvalue="Gradle.Vector2dTest" />
       <item itemvalue="Gradle.Lab4Test" />
-      <item itemvalue="Gradle.GrassFieldTest" />
-      <item itemvalue="Gradle.GrassFieldTest.objectAtTest" />
       <item itemvalue="Gradle.RectangularMapTest" />
-      <item itemvalue="Gradle.RectangularMapTest.canMoveToTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Lab4Test" />
+        <item itemvalue="Gradle.Tests in 'oolab.test'" />
         <item itemvalue="Gradle.RectangularMapTest" />
-        <item itemvalue="Gradle.GrassFieldTest" />
-        <item itemvalue="Gradle.GrassFieldTest.objectAtTest" />
-        <item itemvalue="Gradle.RectangularMapTest.canMoveToTest" />
+        <item itemvalue="Gradle.MapDirectionTest" />
+        <item itemvalue="Gradle.Vector2dTest" />
+        <item itemvalue="Gradle.Lab4Test" />
       </list>
     </recent_temporary>
   </component>
@@ -211,27 +213,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666003002567</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Lab1: Punkt 2.&#10;&#10;Utwórz nowy projekt typu Gradle -&gt; Java (!nie Java -&gt; Java) o nazwie oolab.">
-      <created>1666004080208</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1666004080208</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Lab1: Punkt 3.&#10;&#10;W katalogu src/main/java/ utwórz pakiet agh.ics.oop (ppm na src/main/java -&gt; New package).">
-      <created>1666004229925</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1666004229925</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Lab1: Punkt 4.&#10;&#10;W pakiecie agh.ics.oop utwórz klasę World ze statyczną funkcją main.">
-      <created>1666004289747</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1666004289747</updated>
     </task>
     <task id="LOCAL-00004" summary="Lab1: Punkt 5.&#10;&#10;Zaimplementuj metodę main tak aby wyświetlały się dwa komunikaty:&#10;- system wystartował&#10;- system zakończył działanie">
       <created>1666004369481</created>
@@ -548,7 +529,35 @@
       <option name="project" value="LOCAL" />
       <updated>1669746658683</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="AnimalTest: fix, żeby testy przechodziły">
+      <created>1670696975514</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1670696975514</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Lab7: Obsługa wyjątków: OptionsParser">
+      <created>1670697121233</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1670697121234</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Lab7: Obsługa wyjątków: AbstractWorldMap">
+      <created>1670697191358</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1670697191358</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Lab7: Obsługa wyjątków: aktualizacja testów">
+      <created>1670700508676</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1670700508676</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -556,18 +565,40 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Lab2: MapDirection: implementacja" />
-    <MESSAGE value="Lab2: MapDirection: sprawdzenie działania metod" />
-    <MESSAGE value="Lab2: implementacja testów dla MapDirection" />
-    <MESSAGE value="Lab2: implementacja testów dla Vector2d" />
-    <MESSAGE value="Lab2: Vector2d: popraw substract -&gt; subtract" />
     <MESSAGE value="Lab3: Utwórz klasę Animal&#10;&#10;która:&#10;- określa początkową orientację zwierzęcia jako NORTH,&#10;- określa początkowe położenie zwierzęcia na mapie jako Vector2d(2,2) (przyjmij, że zwierzę znajduje się w pierwszej ćwiartce układu współrzędnych, a północ jest tożsama z kierunkiem wyznaczanym przez rosnące wartości na osi OY),&#10;- definiuje metodę toString(), która w reprezentacji łańcuchowej zawiera informacje o położeniu zwierzęcia (pozycję oraz orientację),&#10;- definiuje metodą boolean isAt(Vector2d position), która zwraca prawdę, jeśli zwierzę znajduje się na pozycji position.&#10;- definuje swoje pola jako prywatne." />
     <MESSAGE value="Lab3: Punkt 3&#10;&#10;Utwórz lub zmodyfikuj klasę World, która w metodzie main stworzy zwierzę i wyświetli w konsoli jego pozycję" />
     <MESSAGE value="Lab3: Punkt 4&#10;&#10;Dodaj do klasy Animal metodę move(MoveDirection direction), która:&#10;- Dla kierunków RIGHT i LEFT zmienia orientację zwierzęcia na mapie, np. kiedy zwierzę jest w pozycji NORTH a zmiana kierunku to RIGHT to orientacja zwierzęcia powinna wynosić EAST.&#10;- Dla kierunków FORWARD i BACKWARD zmienia pozycję zwierzęcia o 1 pole, uwzględniając jego orientację, np. kiedy zwierzę jest na pozycji (2,2) i jego orientacja to NORTH, to po ruchu FORWARD jego pozycja to (2,3).&#10;- Uniemożliwia wyjechanie poza mapę, która ustalona jest od pozycji (0,0) do pozycji (4,4) (pięć na pięć pól). W sytuacji, w której zwierzę miałoby wyjść poza mapę, wywołanie move nie ma żadnego skutku." />
@@ -588,7 +619,12 @@
     <MESSAGE value="Lab5: Punkt 5. - 9." />
     <MESSAGE value="Lab6: Zmiana sposobu przechowywania obiektów na mapie" />
     <MESSAGE value="Lab6: Implementacja interfejsu IPositionChangeObserver" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab6: Implementacja interfejsu IPositionChangeObserver" />
+    <MESSAGE value="AnimalTest: fix, żeby testy przechodziły" />
+    <MESSAGE value="Lab7: Obsługa wyjątków: OptionsParser" />
+    <MESSAGE value="Lab7: Obsługa wyjątków: AbstractWorldMap" />
+    <MESSAGE value="Lab7: Obsługa wyjątków: aktualizacja testów" />
+    <MESSAGE value="Dodaj abstrakcyjną klasę dla Animal i Grass" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dodaj abstrakcyjną klasę dla Animal i Grass" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

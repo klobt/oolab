@@ -24,7 +24,7 @@ public class GrassField extends AbstractWorldMap {
         this.grassMap = new HashMap<Vector2d, Grass>();
         for (int i = 0; i < n; i++) {
             Vector2d position = nextPosition(random, n);
-            this.grassMap.put(position, new Grass(position));
+            this.grassMap.put(position, new Grass(this, position));
         }
     }
 
