@@ -21,7 +21,8 @@ public class AnimalTest {
     }
 
     private void assertAnimal(String[] input, Vector2d endPosition, MapDirection endOrientation) {
-        Animal animal = new Animal();
+        IWorldMap map = new RectangularMap(5, 5);
+        Animal animal = new Animal(map);
         for (MoveDirection direction : new OptionsParser().parse(input)) {
             animal.move(direction);
         }
