@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab7: Wyświetlanie mapy w GUI: Punkt 8.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/GrassField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/GrassField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/UnboundedMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/UnboundedMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/gui/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/gui/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -187,8 +189,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.World" />
         <item itemvalue="Gradle.Tests in 'oolab.test'" />
+        <item itemvalue="Application.World" />
         <item itemvalue="Gradle.RectangularMapTest" />
         <item itemvalue="Gradle.MapDirectionTest" />
         <item itemvalue="Gradle.Vector2dTest" />
@@ -203,13 +205,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666003002567</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Lab1: Punkt 26&#10;&#10;(Dla zaawansowanych) Zmień kod odpowiedzialny za konwersję argumentów oraz wyświetlanie kierunków, tak by korzystał z interfejsu stream dostępnego w Javie 8.">
-      <created>1666006217529</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1666006217529</updated>
     </task>
     <task id="LOCAL-00015" summary="Lab1: dodaj linka do repozytorium git">
       <created>1666006674989</created>
@@ -547,7 +542,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670709808371</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Lab7: Wyświetlanie mapy w GUI: Punkt 8.">
+      <created>1670710074788</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1670710074788</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -16,7 +16,7 @@ public class App extends Application {
     @Override
     public void init() {
         directions = new OptionsParser().parse(getParameters().getRaw().toArray(new String[0]));
-        map = new RectangularMap(10, 5);
+        map = new GrassField(10);
         Vector2d[] positions = { new Vector2d(2,2), new Vector2d(3,4) };
         IEngine engine = new SimulationEngine(directions, map, positions);
         engine.run();

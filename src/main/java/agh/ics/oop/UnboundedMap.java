@@ -1,7 +1,7 @@
 package agh.ics.oop;
 
 public class UnboundedMap extends AbstractWorldMap {
-    private MapBoundary mapBoundary = new MapBoundary();
+    protected MapBoundary mapBoundary = new MapBoundary();
 
     @Override
     public boolean place(Animal animal) {
@@ -20,5 +20,10 @@ public class UnboundedMap extends AbstractWorldMap {
     @Override
     public Vector2d upperRight() {
         return new Vector2d(mapBoundary.xOrdered.lastKey().x, mapBoundary.yOrdered.lastKey().y);
+    }
+
+    @Override
+    public Object objectAt(Vector2d position) {
+        return mapBoundary.xOrdered.get(position);
     }
 }
