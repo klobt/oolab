@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Map;
 import java.util.HashMap;
 
-public class GrassField extends AbstractWorldMap {
+public class GrassField extends UnboundedMap {
     private Map<Vector2d, Grass> grassMap;
 
     private Vector2d nextPosition(Random random, int n) {
@@ -35,35 +35,5 @@ public class GrassField extends AbstractWorldMap {
             return object;
         }
         return grassMap.get(position);
-    }
-
-    @Override
-    public Vector2d lowerLeft() {
-        int x = Integer.MAX_VALUE;
-        int y = Integer.MAX_VALUE;
-        for (Animal animal : animals.values()) {
-            x = Math.min(x, animal.getPosition().x);
-            y = Math.min(y, animal.getPosition().y);
-        }
-        for (Grass grass : grassMap.values()) {
-            x = Math.min(x, grass.getPosition().x);
-            y = Math.min(y, grass.getPosition().y);
-        }
-        return new Vector2d(x, y);
-    }
-
-    @Override
-    public Vector2d upperRight() {
-        int x = Integer.MIN_VALUE;
-        int y = Integer.MIN_VALUE;
-        for (Animal animal : animals.values()) {
-            x = Math.max(x, animal.getPosition().x);
-            y = Math.max(y, animal.getPosition().y);
-        }
-        for (Grass grass : grassMap.values()) {
-            x = Math.max(x, grass.getPosition().x);
-            y = Math.max(y, grass.getPosition().y);
-        }
-        return new Vector2d(x, y);
     }
 }
