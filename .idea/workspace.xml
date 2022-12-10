@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab7: Wyświetlanie mapy w GUI: Punkt 6.">
+    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab7: Wyświetlanie mapy w GUI: Punkt 7.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/gui/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/gui/App.java" afterDir="false" />
     </list>
@@ -203,13 +203,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666003002567</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Lab1: Punkt 21&#10;&#10;W tym samym pliku dodaj sekcję: ...">
-      <created>1666005849092</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1666005849092</updated>
     </task>
     <task id="LOCAL-00013" summary="Lab1: Punkt 21&#10;&#10;W tym samym pliku dodaj sekcję: ...">
       <created>1666005889333</created>
@@ -547,7 +540,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670709151406</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Lab7: Wyświetlanie mapy w GUI: Punkt 7.">
+      <created>1670709340737</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1670709340737</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +589,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Lab3: Punkt 10." />
     <MESSAGE value="Lab4: Punkt 3." />
     <MESSAGE value="Lab4: Punkt 4." />
     <MESSAGE value="Lab4: Punkt 5." />
@@ -614,7 +613,8 @@
     <MESSAGE value="Lab7: Wyświetlanie mapy w GUI: Punkt 3. i 4." />
     <MESSAGE value="Lab7: Wyświetlanie mapy w GUI: Punkt 5." />
     <MESSAGE value="Lab7: Wyświetlanie mapy w GUI: Punkt 6." />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab7: Wyświetlanie mapy w GUI: Punkt 6." />
+    <MESSAGE value="Lab7: Wyświetlanie mapy w GUI: Punkt 7." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab7: Wyświetlanie mapy w GUI: Punkt 7." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

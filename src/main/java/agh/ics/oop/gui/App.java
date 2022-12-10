@@ -4,7 +4,9 @@ import agh.ics.oop.*;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.RowConstraints;
 import javafx.stage.Stage;
 
 public class App extends Application {
@@ -20,15 +22,23 @@ public class App extends Application {
     }
     @Override
     public void start(Stage primaryStage) {
+        int windowWidth = 400, windowHeight = 400;
+        int columnWidth = windowWidth / (map.upperRight().x - map.lowerLeft().x + 1);
+        int rowHeight = windowHeight / (map.upperRight().y - map.lowerLeft().y + 1);
+
         GridPane gridPane = new GridPane();
 
+        gridPane.getColumnConstraints().add(new ColumnConstraints(columnWidth));
+        gridPane.getRowConstraints().add(new RowConstraints(rowHeight));
         gridPane.add(new Label("y/x"), 0, 0);
 
         for (int x = 0; x < map.upperRight().x - map.lowerLeft().x; x++) {
+            gridPane.getColumnConstraints().add(new ColumnConstraints(columnWidth));
             gridPane.add(new Label("" + x), x + 1, 0);
         }
 
         for (int y = 0; y < map.upperRight().y - map.lowerLeft().y; y++) {
+            gridPane.getRowConstraints().add(new RowConstraints(rowHeight));
             gridPane.add(new Label("" + y), 0, y + 1);
         }
 
