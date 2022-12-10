@@ -5,8 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Random;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class RectangularMapTest {
     @Test
@@ -24,9 +23,10 @@ public class RectangularMapTest {
             }
             for (int j = 0; j < 200; j++) {
                 Vector2d position = new Vector2d(random.nextInt(mapWidth), random.nextInt(mapHeight));
-                if (map.place(new Animal(map, position))) {
+                try {
+                    map.place(new Animal(map, position));
                     assertFalse(map.canMoveTo(position));
-                }
+                } catch (IllegalArgumentException ex) {}
             }
         }
     }
@@ -40,15 +40,16 @@ public class RectangularMapTest {
             RectangularMap map = new RectangularMap(mapWidth, mapHeight);
             for (int j = 0; j < 100; j++) {
                 Vector2d positionOutside1 = new Vector2d(-random.nextInt(), -random.nextInt());
-                assertFalse(map.place(new Animal(map, positionOutside1)));
+                assertThrows(IllegalArgumentException.class, () -> map.place(new Animal(map, positionOutside1)));
                 Vector2d positionOutside2 = new Vector2d(mapWidth + random.nextInt(), mapHeight + random.nextInt());
-                assertFalse(map.place(new Animal(map, positionOutside2)));
+                assertThrows(IllegalArgumentException.class, () -> map.place(new Animal(map, positionOutside2)));
             }
             for (int j = 0; j < 200; j++) {
                 Vector2d position = new Vector2d(random.nextInt(mapWidth), random.nextInt(mapHeight));
-                if (map.place(new Animal(map, position))) {
+                try {
+                    map.place(new Animal(map, position));
                     assertFalse(map.place(new Animal(map, position)));
-                }
+                } catch (IllegalArgumentException ex) {}
             }
         }
     }
@@ -62,9 +63,10 @@ public class RectangularMapTest {
             RectangularMap map = new RectangularMap(mapWidth, mapHeight);
             for (int j = 0; j < 200; j++) {
                 Vector2d position = new Vector2d(random.nextInt(mapWidth), random.nextInt(mapHeight));
-                if (map.place(new Animal(map, position))) {
+                try {
+                    map.place(new Animal(map, position));
                     assert(map.isOccupied(position));
-                }
+                } catch (IllegalArgumentException ex) {}
             }
             for (int j = 0; j < 100; j++) {
                 Vector2d positionOutside1 = new Vector2d(-random.nextInt(), -random.nextInt());
@@ -89,10 +91,11 @@ public class RectangularMapTest {
                 assertEquals(map.objectAt(positionOutside2), null);
             }
             for (int j = 0; j < 200; j++) {
-                Animal animal = new Animal(map, new Vector2d(random.nextInt(mapWidth), random.nextInt(mapHeight)));
-                if (map.place(animal)) {
+                try {
+                    Animal animal = new Animal(map, new Vector2d(random.nextInt(mapWidth), random.nextInt(mapHeight)));
+                    map.place(animal);
                     assertEquals(map.objectAt(animal.getPosition()), animal);
-                }
+                } catch (IllegalArgumentException ex) {}
             }
         }
     }

@@ -5,8 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Random;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class GrassFieldTest {
     @Test
@@ -20,9 +19,10 @@ public class GrassFieldTest {
                         random.nextInt((int) Math.sqrt(grassN * 10)),
                         random.nextInt((int) Math.sqrt(grassN * 10))
                 );
-                if (grassField.place(new Animal(grassField, position))) {
+                try {
+                    grassField.place(new Animal(grassField, position));
                     assertFalse(grassField.canMoveTo(position));
-                }
+                } catch (IllegalArgumentException ex) {}
             }
         }
     }
@@ -38,9 +38,10 @@ public class GrassFieldTest {
                     random.nextInt((int) Math.sqrt(grassN * 10)),
                     random.nextInt((int) Math.sqrt(grassN * 10))
                 );
-                if (grassField.place(new Animal(grassField, position))) {
-                    assertFalse(grassField.place(new Animal(grassField, position)));
-                }
+                try {
+                    grassField.place(new Animal(grassField, position));
+                    assertThrows(IllegalArgumentException.class, () -> grassField.place(new Animal(grassField, position)));
+                } catch (IllegalArgumentException ex) {}
             }
         }
     }
@@ -56,9 +57,10 @@ public class GrassFieldTest {
                         random.nextInt((int) Math.sqrt(grassN * 10)),
                         random.nextInt((int) Math.sqrt(grassN * 10))
                 );
-                if (grassField.place(new Animal(grassField, position))) {
+                try {
+                    grassField.place(new Animal(grassField, position));
                     assert(grassField.isOccupied(position));
-                }
+                } catch (IllegalArgumentException ex) {}
             }
         }
     }
@@ -70,16 +72,17 @@ public class GrassFieldTest {
             int grassN = random.nextInt(1000) + 1;
             GrassField grassField = new GrassField(grassN);
             for (int j = 0; j < 200; j++) {
-                Animal animal = new Animal(
-                    grassField,
-                    new Vector2d(
-                        random.nextInt((int) Math.sqrt(grassN * 10)),
-                        random.nextInt((int) Math.sqrt(grassN * 10))
-                    )
-                );
-                if (grassField.place(animal)) {
+                try {
+                    Animal animal = new Animal(
+                        grassField,
+                        new Vector2d(
+                            random.nextInt((int) Math.sqrt(grassN * 10)),
+                            random.nextInt((int) Math.sqrt(grassN * 10))
+                        )
+                    );
+                    grassField.place(animal);
                     assertEquals(grassField.objectAt(animal.getPosition()), animal);
-                }
+                } catch (IllegalArgumentException ex) {}
             }
         }
     }
