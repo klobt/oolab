@@ -24,7 +24,7 @@ public abstract class AbstractWorldMap implements IWorldMap, IPositionChangeObse
             animals.put(animal.getPosition(), animal);
             return true;
         } else {
-            return false;
+            throw new IllegalArgumentException("cannot move to " + animal.getPosition().toString());
         }
     }
 
