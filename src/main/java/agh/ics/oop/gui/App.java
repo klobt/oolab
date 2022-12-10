@@ -29,6 +29,8 @@ public class App extends Application {
 
         GridPane gridPane = new GridPane();
 
+        gridPane.setGridLinesVisible(true);
+
         gridPane.getColumnConstraints().add(new ColumnConstraints(columnWidth));
         gridPane.getRowConstraints().add(new RowConstraints(rowHeight));
         {
