@@ -19,11 +19,21 @@ public class App extends Application {
     public void start(Stage primaryStage) {
         GridPane gridPane = new GridPane();
 
+        gridPane.add(new Label("y/x"), 0, 0);
+
+        for (int x = 0; x < map.upperRight().x - map.lowerLeft().x; x++) {
+            gridPane.add(new Label("" + x), x + 1, 0);
+        }
+
+        for (int y = 0; y < map.upperRight().y - map.lowerLeft().y; y++) {
+            gridPane.add(new Label("" + y), 0, y + 1);
+        }
+
         for (int y = 0; y < map.upperRight().y - map.lowerLeft().y; y++) {
             for (int x = 0; x < map.upperRight().x - map.lowerLeft().x; x++) {
                 Vector2d position = new Vector2d(x + map.lowerLeft().x, y + map.lowerLeft().y);
                 Label label = new Label(position.toString());
-                gridPane.add(label, x, y);
+                gridPane.add(label, x + 1, y + 1);
             }
         }
 

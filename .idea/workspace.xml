@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab7: Wyświetlanie mapy w GUI: Punkt 3. i 4.">
+    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab7: Wyświetlanie mapy w GUI: Punkt 5.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/AbstractWorldMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/AbstractWorldMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/gui/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/gui/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -204,13 +203,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666003002567</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Lab1: Punkt 19&#10;&#10;W pliku build.gradle w sekcji plugins dodaj linię: ....">
-      <created>1666005798160</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1666005798160</updated>
     </task>
     <task id="LOCAL-00011" summary="Lab1: Punkt 20&#10;&#10;W tym samym pliku dodaj sekcję: ...">
       <created>1666005828257</created>
@@ -548,7 +540,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670708577588</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Lab7: Wyświetlanie mapy w GUI: Punkt 5.">
+      <created>1670708898940</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1670708898940</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -590,7 +589,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Lab3: Punkt 7.&#10;&#10;Zmodyfikuj metodę main tak, aby korzystając z klasy OptionsParser umożliwiała sterowanie zwierzęciem." />
     <MESSAGE value="Lab3: Punkt 9.&#10;&#10;Napisz testy integracyjne weryfiujące poprawność implementacji. Uwzględnij:&#10;- czy zwierzę ma właściwą orientację,&#10;- czy zwierzę przemieszcza się na właściwe pozycje,&#10;- czy zwierzę nie wychodzi poza mapę,&#10;- czy dane wejściowe podane jako tablica łańcuchów znaków są poprawnie interpretowane." />
     <MESSAGE value="Lab3: Punkt 10." />
     <MESSAGE value="Lab4: Punkt 3." />
@@ -615,7 +613,8 @@
     <MESSAGE value="Lab7: Wyświetlanie mapy w GUI: Punkt 1." />
     <MESSAGE value="Lab7: Wyświetlanie mapy w GUI: Punkt 2." />
     <MESSAGE value="Lab7: Wyświetlanie mapy w GUI: Punkt 3. i 4." />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab7: Wyświetlanie mapy w GUI: Punkt 3. i 4." />
+    <MESSAGE value="Lab7: Wyświetlanie mapy w GUI: Punkt 5." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab7: Wyświetlanie mapy w GUI: Punkt 5." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
