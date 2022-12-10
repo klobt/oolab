@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab7: Wyświetlanie mapy w GUI: Punkt 7.">
+    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab7: Wyświetlanie mapy w GUI: Punkt 8.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/gui/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/gui/App.java" afterDir="false" />
     </list>
@@ -203,13 +203,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666003002567</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Lab1: Punkt 21&#10;&#10;W tym samym pliku dodaj sekcję: ...">
-      <created>1666005889333</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1666005889333</updated>
     </task>
     <task id="LOCAL-00014" summary="Lab1: Punkt 26&#10;&#10;(Dla zaawansowanych) Zmień kod odpowiedzialny za konwersję argumentów oraz wyświetlanie kierunków, tak by korzystał z interfejsu stream dostępnego w Javie 8.">
       <created>1666006217529</created>
@@ -547,7 +540,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670709340737</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Lab7: Wyświetlanie mapy w GUI: Punkt 8.">
+      <created>1670709808371</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1670709808371</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +589,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Lab4: Punkt 3." />
     <MESSAGE value="Lab4: Punkt 4." />
     <MESSAGE value="Lab4: Punkt 5." />
     <MESSAGE value="Lab4: Punkt 6." />
@@ -614,7 +613,8 @@
     <MESSAGE value="Lab7: Wyświetlanie mapy w GUI: Punkt 5." />
     <MESSAGE value="Lab7: Wyświetlanie mapy w GUI: Punkt 6." />
     <MESSAGE value="Lab7: Wyświetlanie mapy w GUI: Punkt 7." />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab7: Wyświetlanie mapy w GUI: Punkt 7." />
+    <MESSAGE value="Lab7: Wyświetlanie mapy w GUI: Punkt 8." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab7: Wyświetlanie mapy w GUI: Punkt 8." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

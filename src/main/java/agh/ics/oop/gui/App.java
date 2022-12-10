@@ -2,6 +2,7 @@ package agh.ics.oop.gui;
 
 import agh.ics.oop.*;
 import javafx.application.Application;
+import javafx.geometry.HPos;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.ColumnConstraints;
@@ -30,16 +31,24 @@ public class App extends Application {
 
         gridPane.getColumnConstraints().add(new ColumnConstraints(columnWidth));
         gridPane.getRowConstraints().add(new RowConstraints(rowHeight));
-        gridPane.add(new Label("y/x"), 0, 0);
+        {
+            Label label = new Label("y/x");
+            gridPane.add(label, 0, 0);
+            GridPane.setHalignment(label, HPos.CENTER);
+        }
 
         for (int x = 0; x < map.upperRight().x - map.lowerLeft().x; x++) {
             gridPane.getColumnConstraints().add(new ColumnConstraints(columnWidth));
-            gridPane.add(new Label("" + x), x + 1, 0);
+            Label label = new Label("" + x);
+            gridPane.add(label, x + 1, 0);
+            GridPane.setHalignment(label, HPos.CENTER);
         }
 
         for (int y = 0; y < map.upperRight().y - map.lowerLeft().y; y++) {
             gridPane.getRowConstraints().add(new RowConstraints(rowHeight));
-            gridPane.add(new Label("" + y), 0, y + 1);
+            Label label = new Label("" + y);
+            gridPane.add(label, 0, y + 1);
+            GridPane.setHalignment(label, HPos.CENTER);
         }
 
         for (int y = 0; y < map.upperRight().y - map.lowerLeft().y; y++) {
@@ -47,7 +56,9 @@ public class App extends Application {
                 Vector2d position = new Vector2d(x + map.lowerLeft().x, y + map.lowerLeft().y);
                 Object object = map.objectAt(position);
                 if (object != null) {
-                    gridPane.add(new Label(object.toString()), x + 1, y + 1);
+                    Label label = new Label(object.toString());
+                    gridPane.add(label, x + 1, y + 1);
+                    GridPane.setHalignment(label, HPos.CENTER);
                 }
             }
         }
