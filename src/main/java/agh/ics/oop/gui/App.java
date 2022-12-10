@@ -14,6 +14,9 @@ public class App extends Application {
     public void init() {
         directions = new OptionsParser().parse(getParameters().getRaw().toArray(new String[0]));
         map = new RectangularMap(10, 5);
+        Vector2d[] positions = { new Vector2d(2,2), new Vector2d(3,4) };
+        IEngine engine = new SimulationEngine(directions, map, positions);
+        engine.run();
     }
     @Override
     public void start(Stage primaryStage) {
@@ -32,8 +35,10 @@ public class App extends Application {
         for (int y = 0; y < map.upperRight().y - map.lowerLeft().y; y++) {
             for (int x = 0; x < map.upperRight().x - map.lowerLeft().x; x++) {
                 Vector2d position = new Vector2d(x + map.lowerLeft().x, y + map.lowerLeft().y);
-                Label label = new Label(position.toString());
-                gridPane.add(label, x + 1, y + 1);
+                Object object = map.objectAt(position);
+                if (object != null) {
+                    gridPane.add(new Label(object.toString()), x + 1, y + 1);
+                }
             }
         }
 
