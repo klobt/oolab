@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab7: MapBoundary i UnboundedMap">
-      <change afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/gui/App.java" afterDir="false" />
+    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab7: Szkielet aplikacji JavaFX">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/World.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/gui/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/gui/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,13 +202,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666003002567</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Lab1: Punkt 8.&#10;&#10;Metoda run powinna informować o tym, że zwierzak idzie do przodu.">
-      <created>1666004467013</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1666004467013</updated>
     </task>
     <task id="LOCAL-00007" summary="Lab1: Punkt 11.&#10;&#10;Po komunikacie o poruszaniu się do przodu wypisz w konsoli wartości wszystkich argumentów tej metody oddzielone przecinkami.">
       <created>1666004761999</created>
@@ -548,7 +539,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670705573922</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Lab7: Szkielet aplikacji JavaFX">
+      <created>1670707580268</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1670707580269</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -590,7 +588,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Lab3: Punkt 3&#10;&#10;Utwórz lub zmodyfikuj klasę World, która w metodzie main stworzy zwierzę i wyświetli w konsoli jego pozycję" />
     <MESSAGE value="Lab3: Punkt 4&#10;&#10;Dodaj do klasy Animal metodę move(MoveDirection direction), która:&#10;- Dla kierunków RIGHT i LEFT zmienia orientację zwierzęcia na mapie, np. kiedy zwierzę jest w pozycji NORTH a zmiana kierunku to RIGHT to orientacja zwierzęcia powinna wynosić EAST.&#10;- Dla kierunków FORWARD i BACKWARD zmienia pozycję zwierzęcia o 1 pole, uwzględniając jego orientację, np. kiedy zwierzę jest na pozycji (2,2) i jego orientacja to NORTH, to po ruchu FORWARD jego pozycja to (2,3).&#10;- Uniemożliwia wyjechanie poza mapę, która ustalona jest od pozycji (0,0) do pozycji (4,4) (pięć na pięć pól). W sytuacji, w której zwierzę miałoby wyjść poza mapę, wywołanie move nie ma żadnego skutku." />
     <MESSAGE value="Lab3: Punkt 5.&#10;&#10;W metodzie main dodaj wywołania, które przetestują poprawność implementacji, np. po ciągu wywołań: RIGHT, FORWARD, FORWARD, FORWARD pozycja zwierzęcia powinna wynosić (4,2) a orientacja EAST." />
     <MESSAGE value="Lab3: Punkt 6.&#10;&#10;Utwórz klasę OptionsParser a w niej metodę parse, która:&#10;- akceptuje tablicę łańcuchów znaków,&#10;- zwraca tablicę kierunków ruchu MoveDirection,&#10;- zamienia łańcuchy f oraz forward na kierunek MoveDirection.FORWARD, b oraz backward na kierunek MoveDirection.BACKWARD, itd.&#10;- dla nieznanych kierunków nie umieszcza ich w tablicy wynikowej (tablica wynikowa powinna zawierać wyłącznie prawidłowe kierunki)." />
@@ -615,7 +612,8 @@
     <MESSAGE value="Lab7: Obsługa wyjątków: aktualizacja testów" />
     <MESSAGE value="Dodaj abstrakcyjną klasę dla Animal i Grass" />
     <MESSAGE value="Lab7: MapBoundary i UnboundedMap" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab7: MapBoundary i UnboundedMap" />
+    <MESSAGE value="Lab7: Szkielet aplikacji JavaFX" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab7: Szkielet aplikacji JavaFX" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
