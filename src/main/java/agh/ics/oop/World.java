@@ -1,6 +1,10 @@
 package agh.ics.oop;
 
+import javafx.application.Application;
+
 import java.util.stream.Stream;
+
+import agh.ics.oop.gui.App;
 
 /*
  * REPOZYTORIUM GIT: https://github.com/klobt/oolab
@@ -55,6 +59,8 @@ public class World {
         IEngine grassEngine = new SimulationEngine(directions, grassField, positions);
         grassEngine.run();
         System.out.println(grassField);
+
+        Application.launch(App.class, arguments);
     }
     private static void run(Stream<Direction> directionStream) {
         System.out.println("Start");
