@@ -38,8 +38,8 @@ public abstract class AbstractWorldMap implements IWorldMap, IPositionChangeObse
         return animals.get(position);
     }
 
-    protected abstract Vector2d lowerLeft();
-    protected abstract Vector2d upperRight();
+    public abstract Vector2d lowerLeft();
+    public abstract Vector2d upperRight();
 
     @Override
     public String toString() {

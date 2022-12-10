@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 
 public class App extends Application {
     MoveDirection[] directions;
-    IWorldMap map;
+    AbstractWorldMap map;
     @Override
     public void init() {
         directions = new OptionsParser().parse(getParameters().getRaw().toArray(new String[0]));
@@ -19,9 +19,10 @@ public class App extends Application {
     public void start(Stage primaryStage) {
         GridPane gridPane = new GridPane();
 
-        for (int y = 0; y < 4; y++) {
-            for (int x = 0; x < 4; x++) {
-                Label label = new Label("Zwierzak");
+        for (int y = 0; y < map.upperRight().y - map.lowerLeft().y; y++) {
+            for (int x = 0; x < map.upperRight().x - map.lowerLeft().x; x++) {
+                Vector2d position = new Vector2d(x + map.lowerLeft().x, y + map.lowerLeft().y);
+                Label label = new Label(position.toString());
                 gridPane.add(label, x, y);
             }
         }
