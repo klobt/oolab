@@ -19,7 +19,7 @@ public class GrassField extends UnboundedMap {
         Random random = new Random();
         for (int i = 0; i < n; i++) {
             Vector2d position = nextPosition(random, n);
-            mapBoundary.addObject(new Grass(this, position));
+            mapBoundary.addObject(new Grass(position));
         }
     }
 }

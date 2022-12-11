@@ -1,7 +1,14 @@
 package agh.ics.oop;
 
-public class Animal extends MapObject {
+import java.util.HashSet;
+import java.util.Set;
+
+public class Animal implements IMapElement {
+    private Vector2d position;
+    private Vector2d oldPosition;
     private MapDirection orientation = MapDirection.NORTH;
+    protected IWorldMap map;
+    protected Set<IPositionChangeObserver> observers = new HashSet<>();
 
     @Override
     public String toString() {
@@ -26,7 +33,8 @@ public class Animal extends MapObject {
     }
 
     public Animal(IWorldMap map, Vector2d initialPosition) {
-        super(map, initialPosition);
+        this.map = map;
+        this.position = initialPosition;
         if (map != null) {
             map.place(this);
         }
@@ -38,5 +46,34 @@ public class Animal extends MapObject {
 
     public Animal() {
         this(null);
+    }
+
+    private void setPosition(Vector2d position) {
+        if (map != null && map.canMoveTo(position)) {
+            this.oldPosition = this.position;
+            this.position = position;
+            positionChanged();
+        }
+    }
+
+    private void positionChanged() {
+        for (IPositionChangeObserver observer : observers) {
+            observer.positionChanged(oldPosition, position);
+        }
+    }
+
+    @Override
+    public Vector2d getPosition() {
+        return position;
+    }
+
+    @Override
+    public void addObserver(IPositionChangeObserver observer) {
+        observers.add(observer);
+    }
+
+    @Override
+    public void removeObserver(IPositionChangeObserver observer) {
+        observers.remove(observer);
     }
 }

@@ -25,10 +25,10 @@ class YComparer implements Comparator<Vector2d> {
 }
 
 public class MapBoundary implements IPositionChangeObserver {
-    public TreeMap<Vector2d, MapObject> xOrdered = new TreeMap<Vector2d, MapObject>(new XComparer());
-    public TreeMap<Vector2d, MapObject> yOrdered = new TreeMap<Vector2d, MapObject>(new YComparer());
+    public TreeMap<Vector2d, IMapElement> xOrdered = new TreeMap<>(new XComparer());
+    public TreeMap<Vector2d, IMapElement> yOrdered = new TreeMap<>(new YComparer());
 
-    public void addObject(MapObject object) {
+    public void addObject(IMapElement object) {
         xOrdered.put(object.getPosition(), object);
         yOrdered.put(object.getPosition(), object);
         object.addObserver(this);
@@ -36,11 +36,11 @@ public class MapBoundary implements IPositionChangeObserver {
 
     @Override
     public void positionChanged(Vector2d oldPosition, Vector2d newPosition) {
-        MapObject objectFromX = xOrdered.remove(oldPosition);
+        IMapElement objectFromX = xOrdered.remove(oldPosition);
         if (objectFromX != null) {
             xOrdered.put(newPosition, objectFromX);
         }
-        MapObject objectFromY = yOrdered.remove(oldPosition);
+        IMapElement objectFromY = yOrdered.remove(oldPosition);
         if (objectFromY != null) {
             yOrdered.put(newPosition, objectFromY);
         }
