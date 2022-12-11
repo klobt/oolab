@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab8: Tekstury">
-      <change afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/IOrientationChangeObserver.java" afterDir="false" />
+    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab8: Wątek symulacyjny: Punkt 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/AbstractWorldMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/AbstractWorldMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/Grass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/Grass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/IMapElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/IMapElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/MapBoundary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/MapBoundary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/SimulationEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/SimulationEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/gui/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/gui/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +74,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.General&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.Tests in 'oolab.test'">
+  <component name="RunManager" selected="Application.World">
     <configuration name="World" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="agh.ics.oop.World" />
       <module name="oolab.main" />
@@ -208,13 +204,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666003002567</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Lab2: implementacja testów dla Vector2d">
-      <created>1666207238987</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1666207238987</updated>
     </task>
     <task id="LOCAL-00023" summary="Lab2: Vector2d: popraw substract -&gt; subtract">
       <created>1666297910311</created>
@@ -552,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670758266776</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="Dodaj IOrientationChangeObserver">
+      <created>1670759046339</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1670759046340</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -594,8 +590,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Lab5: Punkt 3." />
-    <MESSAGE value="Lab5: Punkt 4." />
     <MESSAGE value="Lab5: Punkt 5. - 9." />
     <MESSAGE value="Lab6: Zmiana sposobu przechowywania obiektów na mapie" />
     <MESSAGE value="Lab6: Implementacja interfejsu IPositionChangeObserver" />
@@ -619,7 +613,9 @@
     <MESSAGE value="Zastąp klasę abstrakcyjną MapObject interfejsem IMapElement" />
     <MESSAGE value="Spraw, żeby zwierzę nie zjadało trawy" />
     <MESSAGE value="Lab8: Tekstury" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab8: Tekstury" />
+    <MESSAGE value="Dodaj IOrientationChangeObserver" />
+    <MESSAGE value="Lab8: Wątek symulacyjny: Punkt 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab8: Wątek symulacyjny: Punkt 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

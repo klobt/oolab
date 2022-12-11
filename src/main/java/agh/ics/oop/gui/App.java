@@ -10,15 +10,22 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.RowConstraints;
 import javafx.stage.Stage;
 
-public class App extends Application {
-    MoveDirection[] directions;
+import java.util.Collections;
+
+public class App extends Application implements IPositionChangeObserver, IOrientationChangeObserver{
     AbstractWorldMap map;
     @Override
     public void init() {
-        directions = new OptionsParser().parse(getParameters().getRaw().toArray(new String[0]));
+        MoveDirection[] directions = new OptionsParser().parse(getParameters().getRaw().toArray(new String[0]));
         map = new GrassField(10);
         Vector2d[] positions = { new Vector2d(2,2), new Vector2d(3,4) };
-        IEngine engine = new SimulationEngine(directions, map, positions);
+        IEngine engine = new SimulationEngine(
+                directions,
+                map,
+                positions,
+                Collections.singletonList(this),
+                Collections.singletonList(this)
+        );
         engine.run();
     }
     @Override
@@ -69,5 +76,15 @@ public class App extends Application {
 
         primaryStage.setScene(scene);
         primaryStage.show();
+    }
+
+    @Override
+    public void orientationChanged(MapDirection oldOrientation, MapDirection newOrientation) {
+
+    }
+
+    @Override
+    public void positionChanged(Vector2d oldPosition, Vector2d newPosition, int zIndex) {
+
     }
 }
