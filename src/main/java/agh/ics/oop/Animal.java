@@ -8,7 +8,8 @@ public class Animal implements IMapElement {
     private Vector2d oldPosition;
     private MapDirection orientation = MapDirection.NORTH;
     protected IWorldMap map;
-    protected Set<IPositionChangeObserver> observers = new HashSet<>();
+    protected Set<IPositionChangeObserver> positionChangeObservers = new HashSet<>();
+    protected Set<IOrientationChangeObserver> orientationChangeObservers = new HashSet<>();
 
     @Override
     public String toString() {
@@ -57,7 +58,7 @@ public class Animal implements IMapElement {
     }
 
     private void positionChanged() {
-        for (IPositionChangeObserver observer : observers) {
+        for (IPositionChangeObserver observer : positionChangeObservers) {
             observer.positionChanged(oldPosition, position, 0);
         }
     }
@@ -68,13 +69,23 @@ public class Animal implements IMapElement {
     }
 
     @Override
-    public void addObserver(IPositionChangeObserver observer) {
-        observers.add(observer);
+    public void addPositionChangeObserver(IPositionChangeObserver observer) {
+        positionChangeObservers.add(observer);
     }
 
     @Override
-    public void removeObserver(IPositionChangeObserver observer) {
-        observers.remove(observer);
+    public void removePositionChangeObserver(IPositionChangeObserver observer) {
+        positionChangeObservers.remove(observer);
+    }
+
+    @Override
+    public void addOrientationChangeObserver(IOrientationChangeObserver observer) {
+        orientationChangeObservers.add(observer);
+    }
+
+    @Override
+    public void removeOrientationChangeObserver(IOrientationChangeObserver observer) {
+        orientationChangeObservers.remove(observer);
     }
 
     @Override

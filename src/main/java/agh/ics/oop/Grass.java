@@ -18,13 +18,23 @@ public class Grass implements IMapElement {
     }
 
     @Override
-    public void addObserver(IPositionChangeObserver observer) {
+    public void addPositionChangeObserver(IPositionChangeObserver observer) {
         // ignoruj :p
     }
 
     @Override
-    public void removeObserver(IPositionChangeObserver observer) {
+    public void removePositionChangeObserver(IPositionChangeObserver observer) {
         // ignoruj :p
+    }
+
+    @Override
+    public void addOrientationChangeObserver(IOrientationChangeObserver observer) {
+        // ignoruj
+    }
+
+    @Override
+    public void removeOrientationChangeObserver(IOrientationChangeObserver observer) {
+        // ignoruj
     }
 
     @Override

@@ -40,7 +40,7 @@ public class MapBoundary implements IPositionChangeObserver {
         if (zIndex >= MapPosition.MIN_ZINDEX && zIndex <= MapPosition.MAX_ZINDEX) {
             xOrdered.put(new MapPosition(object.getPosition(), zIndex), object);
             yOrdered.put(new MapPosition(object.getPosition(), zIndex), object);
-            object.addObserver(this);
+            object.addPositionChangeObserver(this);
         } else {
             throw new IllegalArgumentException("zIndex outside allowed range of [" + MapPosition.MIN_ZINDEX + ", " + MapPosition.MAX_ZINDEX + "]");
         }

@@ -7,9 +7,13 @@ public interface IMapElement {
         return position.equals(getPosition());
     }
 
-    void addObserver(IPositionChangeObserver observer);
+    void addPositionChangeObserver(IPositionChangeObserver observer);
 
-    void removeObserver(IPositionChangeObserver observer);
+    void removePositionChangeObserver(IPositionChangeObserver observer);
+
+    void addOrientationChangeObserver(IOrientationChangeObserver observer);
+
+    void removeOrientationChangeObserver(IOrientationChangeObserver observer);
 
     String getImagePath();
 
