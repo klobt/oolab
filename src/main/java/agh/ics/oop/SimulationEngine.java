@@ -7,6 +7,7 @@ import java.util.stream.Stream;
 public class SimulationEngine implements IEngine {
     private Animal[] animals;
     private MoveDirection[] directions;
+    long moveDelay;
 
     public SimulationEngine(MoveDirection[] directions, IWorldMap map, Vector2d[] initialPositions, List<IPositionChangeObserver> positionChangeObservers, List<IOrientationChangeObserver> orientationChangeObservers) {
         this.animals = Stream.of(initialPositions)
