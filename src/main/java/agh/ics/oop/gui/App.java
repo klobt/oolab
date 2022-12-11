@@ -19,11 +19,9 @@ public class App extends Application implements IPositionChangeObserver, IOrient
 
     @Override
     public void init() {
-        MoveDirection[] directions = new OptionsParser().parse(getParameters().getRaw().toArray(new String[0]));
         map = new GrassField(10);
         Vector2d[] positions = { new Vector2d(2,2), new Vector2d(3,4) };
         SimulationEngine engine = new SimulationEngine(
-                directions,
                 map,
                 positions,
                 Collections.singletonList(this),

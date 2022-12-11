@@ -25,14 +25,24 @@ public class SimulationEngine implements IEngine, Runnable {
         this(directions, map, initialPositions, Collections.emptyList(), Collections.emptyList(), 0);
     }
 
+    public SimulationEngine(IWorldMap map, Vector2d[] initialPositions, List<IPositionChangeObserver> positionChangeObservers, List<IOrientationChangeObserver> orientationChangeObservers, long moveDelay) {
+        this(null, map, initialPositions, positionChangeObservers, orientationChangeObservers, moveDelay);
+    }
+
+        public void setDirections(MoveDirection[] directions) {
+        this.directions = directions;
+    }
+
     @Override
     public void run() {
-        for (int i = 0; i < directions.length; i++) {
-            animals[i % animals.length].move(directions[i]);
-            try {
-                Thread.sleep(moveDelay);
-            } catch (InterruptedException ex) {
-                System.out.println("error: " + ex.getMessage());
+        if (directions != null) {
+            for (int i = 0; i < directions.length; i++) {
+                animals[i % animals.length].move(directions[i]);
+                try {
+                    Thread.sleep(moveDelay);
+                } catch (InterruptedException ex) {
+                    System.out.println("error: " + ex.getMessage());
+                }
             }
         }
     }
