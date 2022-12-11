@@ -2,6 +2,7 @@ package agh.ics.oop.gui;
 
 import agh.ics.oop.*;
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.geometry.HPos;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
@@ -14,6 +15,8 @@ import java.util.Collections;
 
 public class App extends Application implements IPositionChangeObserver, IOrientationChangeObserver{
     AbstractWorldMap map;
+    GridPane gridPane = new GridPane();
+
     @Override
     public void init() {
         MoveDirection[] directions = new OptionsParser().parse(getParameters().getRaw().toArray(new String[0]));
@@ -30,16 +33,27 @@ public class App extends Application implements IPositionChangeObserver, IOrient
     }
     @Override
     public void start(Stage primaryStage) {
+        gridPane.setGridLinesVisible(true);
+        updateGrid();
+
+        Scene scene = new Scene(gridPane, 400, 400);
+
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
+
+    private void updateGrid() {
+        gridPane.getChildren().clear();
+
         int windowWidth = 400, windowHeight = 400;
         int columnWidth = windowWidth / (map.upperRight().x - map.lowerLeft().x + 1);
         int rowHeight = windowHeight / (map.upperRight().y - map.lowerLeft().y + 1);
 
-        GridPane gridPane = new GridPane();
-
-        gridPane.setGridLinesVisible(true);
-
+        gridPane.getColumnConstraints().clear();
         gridPane.getColumnConstraints().add(new ColumnConstraints(columnWidth));
+        gridPane.getRowConstraints().clear();
         gridPane.getRowConstraints().add(new RowConstraints(rowHeight));
+
         {
             Label label = new Label("y/x");
             gridPane.add(label, 0, 0);
@@ -71,20 +85,15 @@ public class App extends Application implements IPositionChangeObserver, IOrient
                 }
             }
         }
-
-        Scene scene = new Scene(gridPane, 400, 400);
-
-        primaryStage.setScene(scene);
-        primaryStage.show();
     }
 
     @Override
     public void orientationChanged(MapDirection oldOrientation, MapDirection newOrientation) {
-
+        Platform.runLater(this::updateGrid);
     }
 
     @Override
     public void positionChanged(Vector2d oldPosition, Vector2d newPosition, int zIndex) {
-
+        Platform.runLater(this::updateGrid);
     }
 }
