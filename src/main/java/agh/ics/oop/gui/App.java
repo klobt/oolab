@@ -28,8 +28,6 @@ public class App extends Application implements IPositionChangeObserver, IOrient
                 Collections.singletonList(this),
                 2000
         );
-        Thread thread = new Thread(engine);
-        thread.start();
     }
     @Override
     public void start(Stage primaryStage) {

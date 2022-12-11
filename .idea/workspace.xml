@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab8: Inne elementy interfejsu: Punkt 1">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/SimulationEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/SimulationEngine.java" afterDir="false" />
+    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab8: Inne elementy interfejsu: Punkt 2">
       <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/gui/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/gui/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -204,13 +202,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666003002567</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Lab3: Punkt 9.&#10;&#10;Napisz testy integracyjne weryfiujące poprawność implementacji. Uwzględnij:&#10;- czy zwierzę ma właściwą orientację,&#10;- czy zwierzę przemieszcza się na właściwe pozycje,&#10;- czy zwierzę nie wychodzi poza mapę,&#10;- czy dane wejściowe podane jako tablica łańcuchów znaków są poprawnie interpretowane.">
-      <created>1666719764327</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1666719764327</updated>
     </task>
     <task id="LOCAL-00032" summary="Lab3: Punkt 10.">
       <created>1666720132630</created>
@@ -548,7 +539,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670762384685</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="Lab8: Inne elementy interfejsu: Punkt 2">
+      <created>1670762585158</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1670762585158</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -590,7 +588,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Dodaj abstrakcyjną klasę dla Animal i Grass" />
     <MESSAGE value="Lab7: MapBoundary i UnboundedMap" />
     <MESSAGE value="Lab7: Szkielet aplikacji JavaFX" />
     <MESSAGE value="Lab7: Wyświetlanie mapy w GUI: Punkt 1." />
@@ -615,7 +612,8 @@
     <MESSAGE value="Lab8: Wątek symulacyjny: Punkt 6" />
     <MESSAGE value="fix: wyświetlanie mapy w App" />
     <MESSAGE value="Lab8: Inne elementy interfejsu: Punkt 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab8: Inne elementy interfejsu: Punkt 1" />
+    <MESSAGE value="Lab8: Inne elementy interfejsu: Punkt 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab8: Inne elementy interfejsu: Punkt 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
