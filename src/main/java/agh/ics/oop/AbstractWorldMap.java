@@ -14,7 +14,8 @@ public abstract class AbstractWorldMap implements IWorldMap, IPositionChangeObse
 
     @Override
     public boolean canMoveTo(Vector2d position) {
-        return objectAt(position) == null;
+        Object object = objectAt(position);
+        return !(object instanceof Animal);
     }
 
     @Override
@@ -47,7 +48,7 @@ public abstract class AbstractWorldMap implements IWorldMap, IPositionChangeObse
     }
 
     @Override
-    public void positionChanged(Vector2d oldPosition, Vector2d newPosition) {
+    public void positionChanged(Vector2d oldPosition, Vector2d newPosition, int zIndex) {
         Animal animal = animals.get(oldPosition);
         if (animal != null && canMoveTo(newPosition)) {
             animals.remove(oldPosition);

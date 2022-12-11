@@ -8,7 +8,7 @@ public class GrassField extends UnboundedMap {
             random.nextInt((int) Math.sqrt(n * 10)),
             random.nextInt((int) Math.sqrt(n * 10))
         );
-        if (mapBoundary.xOrdered.containsKey(proposed)) {
+        if (mapBoundary.xOrdered.containsKey(new MapPosition(proposed, -1))) {
             return nextPosition(random, n);
         }
         return proposed;
@@ -19,7 +19,7 @@ public class GrassField extends UnboundedMap {
         Random random = new Random();
         for (int i = 0; i < n; i++) {
             Vector2d position = nextPosition(random, n);
-            mapBoundary.addObject(new Grass(position));
+            mapBoundary.addObject(new Grass(position), -1);
         }
     }
 }

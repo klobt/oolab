@@ -14,16 +14,22 @@ public class UnboundedMap extends AbstractWorldMap {
     }
     @Override
     public Vector2d lowerLeft() {
-        return new Vector2d(mapBoundary.xOrdered.firstKey().x, mapBoundary.yOrdered.firstKey().y);
+        return new Vector2d(mapBoundary.xOrdered.firstKey().position.x, mapBoundary.yOrdered.firstKey().position.y);
     }
 
     @Override
     public Vector2d upperRight() {
-        return new Vector2d(mapBoundary.xOrdered.lastKey().x, mapBoundary.yOrdered.lastKey().y);
+        return new Vector2d(mapBoundary.xOrdered.lastKey().position.x, mapBoundary.yOrdered.lastKey().position.y);
     }
 
     @Override
     public Object objectAt(Vector2d position) {
-        return mapBoundary.xOrdered.get(position);
+        for (int zindex = MapPosition.MAX_ZINDEX; zindex >= MapPosition.MIN_ZINDEX; zindex--) {
+            Object object = mapBoundary.xOrdered.get(new MapPosition(position, zindex));
+            if (object != null) {
+                return object;
+            }
+        }
+        return null;
     }
 }

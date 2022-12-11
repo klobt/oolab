@@ -2,47 +2,63 @@ package agh.ics.oop;
 
 import java.util.*;
 
-class XComparer implements Comparator<Vector2d> {
+class XComparer implements Comparator<MapPosition> {
     @Override
-    public int compare(Vector2d v1, Vector2d v2) {
-        if (v1.x == v2.x) {
-            return v1.y - v2.y;
+    public int compare(MapPosition v1, MapPosition v2) {
+        if (v1.position.x == v2.position.x) {
+            if (v1.zIndex == v2.zIndex) {
+                return v1.position.y - v2.position.y;
+            } else {
+                return v2.zIndex - v1.zIndex;
+            }
         } else {
-            return v1.x - v2.x;
+            return v1.position.x - v2.position.x;
         }
     }
 }
 
-class YComparer implements Comparator<Vector2d> {
+class YComparer implements Comparator<MapPosition> {
     @Override
-    public int compare(Vector2d v1, Vector2d v2) {
-        if (v1.y == v2.y) {
-            return v1.x - v2.x;
+    public int compare(MapPosition v1, MapPosition v2) {
+        if (v1.position.y == v2.position.y) {
+            if (v1.zIndex == v2.zIndex) {
+                return v1.position.x - v2.position.x;
+            } else {
+                return v2.zIndex - v1.zIndex;
+            }
         } else {
-            return v1.y - v2.y;
+            return v1.position.y - v2.position.y;
         }
     }
 }
 
 public class MapBoundary implements IPositionChangeObserver {
-    public TreeMap<Vector2d, IMapElement> xOrdered = new TreeMap<>(new XComparer());
-    public TreeMap<Vector2d, IMapElement> yOrdered = new TreeMap<>(new YComparer());
+    public TreeMap<MapPosition, IMapElement> xOrdered = new TreeMap<>(new XComparer());
+    public TreeMap<MapPosition, IMapElement> yOrdered = new TreeMap<>(new YComparer());
+
+    public void addObject(IMapElement object, int zIndex) {
+        if (zIndex >= MapPosition.MIN_ZINDEX && zIndex <= MapPosition.MAX_ZINDEX) {
+            xOrdered.put(new MapPosition(object.getPosition(), zIndex), object);
+            yOrdered.put(new MapPosition(object.getPosition(), zIndex), object);
+            object.addObserver(this);
+        } else {
+            throw new IllegalArgumentException("zIndex outside allowed range of [" + MapPosition.MIN_ZINDEX + ", " + MapPosition.MAX_ZINDEX + "]");
+        }
+    }
 
     public void addObject(IMapElement object) {
-        xOrdered.put(object.getPosition(), object);
-        yOrdered.put(object.getPosition(), object);
-        object.addObserver(this);
+        addObject(object, 0);
     }
 
     @Override
-    public void positionChanged(Vector2d oldPosition, Vector2d newPosition) {
-        IMapElement objectFromX = xOrdered.remove(oldPosition);
+    public void positionChanged(Vector2d oldPosition, Vector2d newPosition, int zIndex) {
+        IMapElement objectFromX = xOrdered.remove(new MapPosition(oldPosition, zIndex));
         if (objectFromX != null) {
-            xOrdered.put(newPosition, objectFromX);
+            xOrdered.put(new MapPosition(newPosition, zIndex), objectFromX);
         }
-        IMapElement objectFromY = yOrdered.remove(oldPosition);
+        IMapElement objectFromY = yOrdered.remove(new MapPosition(oldPosition, zIndex));
         if (objectFromY != null) {
-            yOrdered.put(newPosition, objectFromY);
+            yOrdered.put(new MapPosition(newPosition, zIndex), objectFromY);
         }
 
     }

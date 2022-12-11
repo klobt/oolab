@@ -58,7 +58,7 @@ public class Animal implements IMapElement {
 
     private void positionChanged() {
         for (IPositionChangeObserver observer : observers) {
-            observer.positionChanged(oldPosition, position);
+            observer.positionChanged(oldPosition, position, 0);
         }
     }
 
