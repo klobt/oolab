@@ -10,4 +10,8 @@ public interface IMapElement {
     void addObserver(IPositionChangeObserver observer);
 
     void removeObserver(IPositionChangeObserver observer);
+
+    String getImagePath();
+
+    String getLabelString();
 }

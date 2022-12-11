@@ -26,4 +26,14 @@ public class Grass implements IMapElement {
     public void removeObserver(IPositionChangeObserver observer) {
         // ignoruj :p
     }
+
+    @Override
+    public String getImagePath() {
+        return "grass.png";
+    }
+
+    @Override
+    public String getLabelString() {
+        return "Trawa";
+    }
 }

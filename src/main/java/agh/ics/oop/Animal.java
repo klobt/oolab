@@ -76,4 +76,22 @@ public class Animal implements IMapElement {
     public void removeObserver(IPositionChangeObserver observer) {
         observers.remove(observer);
     }
+
+    @Override
+    public String getImagePath() {
+        return String.format(
+                "%s.png",
+                switch (orientation) {
+                    case NORTH -> "up";
+                    case EAST -> "right";
+                    case SOUTH -> "down";
+                    case WEST -> "left";
+                }
+        );
+    }
+
+    @Override
+    public String getLabelString() {
+        return "Z " + position.toString();
+    }
 }

@@ -58,9 +58,9 @@ public class App extends Application {
                 Vector2d position = new Vector2d(x + map.lowerLeft().x, y + map.lowerLeft().y);
                 Object object = map.objectAt(position);
                 if (object != null) {
-                    Label label = new Label(object.toString());
-                    gridPane.add(label, x + 1, y + 1);
-                    GridPane.setHalignment(label, HPos.CENTER);
+                    GuiElementBox elementBox = new GuiElementBox((IMapElement) object);
+                    gridPane.add(elementBox, x + 1, y + 1);
+                    GridPane.setHalignment(elementBox, HPos.CENTER);
                 }
             }
         }
