@@ -63,7 +63,7 @@ public class App extends Application implements IPositionChangeObserver, IOrient
         vbox.getChildren().add(gridPane);
         vbox.getChildren().add(hbox);
 
-        Scene scene = new Scene(vbox, 400, 500);
+        Scene scene = new Scene(vbox, 400, 450);
 
         primaryStage.setScene(scene);
         primaryStage.show();
@@ -76,8 +76,8 @@ public class App extends Application implements IPositionChangeObserver, IOrient
         ur = map.upperRight();
 
         int windowWidth = 400, windowHeight = 400;
-        int columnWidth = windowWidth / (ur.x - ll.x + 1);
-        int rowHeight = windowHeight / (ur.y - ll.y + 1);
+        int columnWidth = windowWidth / (ur.x - ll.x + 2);
+        int rowHeight = windowHeight / (ur.y - ll.y + 2);
 
         gridPane.getColumnConstraints().clear();
         gridPane.getColumnConstraints().add(new ColumnConstraints(columnWidth));

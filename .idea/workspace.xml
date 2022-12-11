@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab8: Inne elementy interfejsu: Punkt 4">
+    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab8: Wątek symulacyjny: Punkt 2: Dla zaawansowanych">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/IOrientationChangeObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/IOrientationChangeObserver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/gui/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/gui/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -205,13 +203,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666003002567</updated>
-    </task>
-    <task id="LOCAL-00035" summary="Lab4: Punkt 4.">
-      <created>1668434971741</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1668434971741</updated>
     </task>
     <task id="LOCAL-00036" summary="Lab4: Punkt 3.">
       <created>1668448617296</created>
@@ -549,7 +540,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670763291558</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="Lab8: Wątek symulacyjny: Punkt 2: Dla zaawansowanych">
+      <created>1670764026714</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1670764026714</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -591,7 +589,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Lab7: Wyświetlanie mapy w GUI: Punkt 2." />
     <MESSAGE value="Lab7: Wyświetlanie mapy w GUI: Punkt 3. i 4." />
     <MESSAGE value="Lab7: Wyświetlanie mapy w GUI: Punkt 5." />
     <MESSAGE value="Lab7: Wyświetlanie mapy w GUI: Punkt 6." />
@@ -616,7 +613,8 @@
     <MESSAGE value="Lab8: Inne elementy interfejsu: Punkt 3" />
     <MESSAGE value="fix: obserwacja orientacji" />
     <MESSAGE value="Lab8: Inne elementy interfejsu: Punkt 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab8: Inne elementy interfejsu: Punkt 4" />
+    <MESSAGE value="Lab8: Wątek symulacyjny: Punkt 2: Dla zaawansowanych" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab8: Wątek symulacyjny: Punkt 2: Dla zaawansowanych" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
