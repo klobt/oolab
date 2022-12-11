@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab8: Wątek symulacyjny: Punkt 3">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/SimulationEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/SimulationEngine.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -203,13 +202,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666003002567</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Lab3: Utwórz klasę Animal&#10;&#10;która:&#10;- określa początkową orientację zwierzęcia jako NORTH,&#10;- określa początkowe położenie zwierzęcia na mapie jako Vector2d(2,2) (przyjmij, że zwierzę znajduje się w pierwszej ćwiartce układu współrzędnych, a północ jest tożsama z kierunkiem wyznaczanym przez rosnące wartości na osi OY),&#10;- definiuje metodę toString(), która w reprezentacji łańcuchowej zawiera informacje o położeniu zwierzęcia (pozycję oraz orientację),&#10;- definiuje metodą boolean isAt(Vector2d position), która zwraca prawdę, jeśli zwierzę znajduje się na pozycji position.&#10;- definuje swoje pola jako prywatne.">
-      <created>1666717435374</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1666717435374</updated>
     </task>
     <task id="LOCAL-00026" summary="Lab3: Punkt 3&#10;&#10;Utwórz lub zmodyfikuj klasę World, która w metodzie main stworzy zwierzę i wyświetli w konsoli jego pozycję">
       <created>1666717511207</created>
@@ -547,7 +539,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670760138567</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="Lab8: Wątek symulacyjny: Punkt 3">
+      <created>1670760287603</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1670760287603</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

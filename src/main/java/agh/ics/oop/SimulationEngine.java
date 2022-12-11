@@ -28,6 +28,11 @@ public class SimulationEngine implements IEngine {
     public void run() {
         for (int i = 0; i < directions.length; i++) {
             animals[i % animals.length].move(directions[i]);
+            try {
+                Thread.sleep(moveDelay);
+            } catch (InterruptedException ex) {
+                System.out.println("error: " + ex.getMessage());
+            }
         }
     }
 }
