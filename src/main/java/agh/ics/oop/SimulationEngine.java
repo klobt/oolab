@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Stream;
 
-public class SimulationEngine implements IEngine {
+public class SimulationEngine implements IEngine, Runnable {
     private Animal[] animals;
     private MoveDirection[] directions;
     long moveDelay;
@@ -24,7 +24,7 @@ public class SimulationEngine implements IEngine {
         this(directions, map, initialPositions, Collections.emptyList(), Collections.emptyList());
     }
 
-        @Override
+    @Override
     public void run() {
         for (int i = 0; i < directions.length; i++) {
             animals[i % animals.length].move(directions[i]);
