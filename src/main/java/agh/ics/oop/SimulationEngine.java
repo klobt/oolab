@@ -9,7 +9,7 @@ public class SimulationEngine implements IEngine, Runnable {
     private MoveDirection[] directions;
     long moveDelay;
 
-    public SimulationEngine(MoveDirection[] directions, IWorldMap map, Vector2d[] initialPositions, List<IPositionChangeObserver> positionChangeObservers, List<IOrientationChangeObserver> orientationChangeObservers) {
+    public SimulationEngine(MoveDirection[] directions, IWorldMap map, Vector2d[] initialPositions, List<IPositionChangeObserver> positionChangeObservers, List<IOrientationChangeObserver> orientationChangeObservers, long moveDelay) {
         this.animals = Stream.of(initialPositions)
                 .map(initialPosition -> new Animal(map, initialPosition))
                 .peek(animal -> {
@@ -18,10 +18,11 @@ public class SimulationEngine implements IEngine, Runnable {
                 })
                 .toArray(Animal[]::new);
         this.directions = directions;
+        this.moveDelay = moveDelay;
     }
 
     public SimulationEngine(MoveDirection[] directions, IWorldMap map, Vector2d[] initialPositions) {
-        this(directions, map, initialPositions, Collections.emptyList(), Collections.emptyList());
+        this(directions, map, initialPositions, Collections.emptyList(), Collections.emptyList(), 0);
     }
 
     @Override
