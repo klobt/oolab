@@ -26,8 +26,8 @@ public class Animal implements IMapElement {
 
     public void move(MoveDirection direction) {
         switch (direction) {
-            case RIGHT -> orientation = orientation.next();
-            case LEFT -> orientation = orientation.previous();
+            case RIGHT -> setOrientation(orientation.next());
+            case LEFT -> setOrientation(orientation.previous());
             case FORWARD -> setPosition(position.add(orientation.toUnitVector()));
             case BACKWARD -> setPosition(position.subtract(orientation.toUnitVector()));
         }
@@ -54,6 +54,14 @@ public class Animal implements IMapElement {
             this.oldPosition = this.position;
             this.position = position;
             positionChanged();
+        }
+    }
+
+    private void setOrientation(MapDirection orientation) {
+        MapDirection oldOrientation = this.orientation;
+        this.orientation = orientation;
+        for (IOrientationChangeObserver observer : orientationChangeObservers) {
+            observer.orientationChanged(oldOrientation, this.orientation);
         }
     }
 
