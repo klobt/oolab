@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab8: Wątek symulacyjny: Punkt 5">
+    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab8: Wątek symulacyjny: Punkt 6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/SimulationEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/SimulationEngine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/gui/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/gui/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +77,7 @@
     <configuration name="World" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="agh.ics.oop.World" />
       <module name="oolab.main" />
-      <option name="PROGRAM_PARAMETERS" value="f f b r f r f f b f" />
+      <option name="PROGRAM_PARAMETERS" value="f f l r f f b b" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="agh.ics.oop.*" />
@@ -204,13 +203,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666003002567</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Lab3: Punkt 5.&#10;&#10;W metodzie main dodaj wywołania, które przetestują poprawność implementacji, np. po ciągu wywołań: RIGHT, FORWARD, FORWARD, FORWARD pozycja zwierzęcia powinna wynosić (4,2) a orientacja EAST.">
-      <created>1666718192203</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1666718192203</updated>
     </task>
     <task id="LOCAL-00029" summary="Lab3: Punkt 6.&#10;&#10;Utwórz klasę OptionsParser a w niej metodę parse, która:&#10;- akceptuje tablicę łańcuchów znaków,&#10;- zwraca tablicę kierunków ruchu MoveDirection,&#10;- zamienia łańcuchy f oraz forward na kierunek MoveDirection.FORWARD, b oraz backward na kierunek MoveDirection.BACKWARD, itd.&#10;- dla nieznanych kierunków nie umieszcza ich w tablicy wynikowej (tablica wynikowa powinna zawierać wyłącznie prawidłowe kierunki).">
       <created>1666718541406</created>
@@ -548,7 +540,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670760464547</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="Lab8: Wątek symulacyjny: Punkt 6">
+      <created>1670760724724</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1670760724724</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -590,7 +589,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Lab7: Obsługa wyjątków: OptionsParser" />
     <MESSAGE value="Lab7: Obsługa wyjątków: AbstractWorldMap" />
     <MESSAGE value="Lab7: Obsługa wyjątków: aktualizacja testów" />
     <MESSAGE value="Dodaj abstrakcyjną klasę dla Animal i Grass" />
@@ -615,7 +613,8 @@
     <MESSAGE value="Lab8: Wątek symulacyjny: Punkt 3" />
     <MESSAGE value="Lab8: Wątek symulacyjny: Punkt 4" />
     <MESSAGE value="Lab8: Wątek symulacyjny: Punkt 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab8: Wątek symulacyjny: Punkt 5" />
+    <MESSAGE value="Lab8: Wątek symulacyjny: Punkt 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab8: Wątek symulacyjny: Punkt 6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

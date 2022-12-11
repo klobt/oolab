@@ -62,27 +62,29 @@ public class App extends Application implements IPositionChangeObserver, IOrient
             GridPane.setHalignment(label, HPos.CENTER);
         }
 
-        for (int x = 0; x < map.upperRight().x - map.lowerLeft().x; x++) {
+        for (int x = 0; x <= map.upperRight().x - map.lowerLeft().x; x++) {
+            int positionX = x + map.lowerLeft().x;
             gridPane.getColumnConstraints().add(new ColumnConstraints(columnWidth));
-            Label label = new Label("" + x);
+            Label label = new Label("" + positionX);
             gridPane.add(label, x + 1, 0);
             GridPane.setHalignment(label, HPos.CENTER);
         }
 
-        for (int y = 0; y < map.upperRight().y - map.lowerLeft().y; y++) {
+        for (int y = 0; y <= map.upperRight().y - map.lowerLeft().y; y++) {
+            int positionY = y + map.lowerLeft().y;
             gridPane.getRowConstraints().add(new RowConstraints(rowHeight));
-            Label label = new Label("" + y);
-            gridPane.add(label, 0, y + 1);
+            Label label = new Label("" + positionY);
+            gridPane.add(label, 0, map.upperRight().y - map.lowerLeft().y - y + 1);
             GridPane.setHalignment(label, HPos.CENTER);
         }
 
-        for (int y = 0; y < map.upperRight().y - map.lowerLeft().y; y++) {
-            for (int x = 0; x < map.upperRight().x - map.lowerLeft().x; x++) {
+        for (int y = 0; y <= map.upperRight().y - map.lowerLeft().y; y++) {
+            for (int x = 0; x <= map.upperRight().x - map.lowerLeft().x; x++) {
                 Vector2d position = new Vector2d(x + map.lowerLeft().x, y + map.lowerLeft().y);
                 Object object = map.objectAt(position);
                 if (object != null) {
                     GuiElementBox elementBox = new GuiElementBox((IMapElement) object);
-                    gridPane.add(elementBox, x + 1, y + 1);
+                    gridPane.add(elementBox, x + 1, map.upperRight().y - map.lowerLeft().y - y + 1);
                     GridPane.setHalignment(elementBox, HPos.CENTER);
                 }
             }
