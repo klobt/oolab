@@ -3,6 +3,7 @@ package agh.ics.oop.gui;
 import agh.ics.oop.*;
 import javafx.application.Application;
 import javafx.application.Platform;
+import javafx.event.ActionEvent;
 import javafx.geometry.*;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -16,23 +17,26 @@ import java.util.Collections;
 public class App extends Application implements IPositionChangeObserver, IOrientationChangeObserver{
     AbstractWorldMap map;
     GridPane gridPane = new GridPane();
+    SimulationEngine engine;
 
     @Override
     public void init() {
         map = new GrassField(10);
         Vector2d[] positions = { new Vector2d(2,2), new Vector2d(3,4) };
-        SimulationEngine engine = new SimulationEngine(
+        engine = new SimulationEngine(
                 map,
                 positions,
                 Collections.singletonList(this),
                 Collections.singletonList(this),
-                2000
+                300
         );
     }
     @Override
     public void start(Stage primaryStage) {
         gridPane.setGridLinesVisible(true);
         updateGrid();
+
+        HBox hbox = new HBox();
 
         TextField textField = new TextField();
         textField.setMinWidth(300);
@@ -41,11 +45,17 @@ public class App extends Application implements IPositionChangeObserver, IOrient
         startButton.setText("Start");
         startButton.setMinWidth(100);
         startButton.setMinHeight(50);
+        startButton.setOnAction((ActionEvent event) -> {
+            engine.setDirections(new OptionsParser().parse(textField.getText().split("\\s+")));
+            hbox.setDisable(true);
+            new Thread(() -> {
+                engine.run();
+                hbox.setDisable(false);
+            }).start();
+        });
 
-        HBox hbox = new HBox();
         hbox.getChildren().add(textField);
         hbox.getChildren().add(startButton);
-        hbox.setDisable(true);
 
         VBox vbox = new VBox();
 
