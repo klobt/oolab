@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="fix: GrassField jako UnboundedMap źle działał">
-      <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/gui/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/gui/App.java" afterDir="false" />
+    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab7: Wyświetlanie mapy w GUI: Punkt 2: setGridLinesVisible">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +72,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.General&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.World">
+  <component name="RunManager" selected="Gradle.Tests in 'oolab.test'">
     <configuration name="World" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="agh.ics.oop.World" />
       <module name="oolab.main" />
@@ -202,13 +202,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666003002567</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Lab2: Vector2d: implementacja klasy">
-      <created>1666113407698</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1666113407698</updated>
     </task>
     <task id="LOCAL-00017" summary="Lab2: Vector2d: sprawdzenie działania">
       <created>1666113534394</created>
@@ -546,7 +539,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670710437648</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Lab7: Wyświetlanie mapy w GUI: Punkt 2: setGridLinesVisible">
+      <created>1670710544174</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1670710544174</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -588,7 +588,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Lab4: Punkt 5." />
     <MESSAGE value="Lab4: Punkt 6." />
     <MESSAGE value="Lab4: Punkt 7." />
     <MESSAGE value="Lab5: Punkt 1." />
@@ -613,7 +612,8 @@
     <MESSAGE value="Lab7: Wyświetlanie mapy w GUI: Punkt 7." />
     <MESSAGE value="Lab7: Wyświetlanie mapy w GUI: Punkt 8." />
     <MESSAGE value="fix: GrassField jako UnboundedMap źle działał" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: GrassField jako UnboundedMap źle działał" />
+    <MESSAGE value="Lab7: Wyświetlanie mapy w GUI: Punkt 2: setGridLinesVisible" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab7: Wyświetlanie mapy w GUI: Punkt 2: setGridLinesVisible" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
