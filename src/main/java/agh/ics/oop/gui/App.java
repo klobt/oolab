@@ -3,12 +3,12 @@ package agh.ics.oop.gui;
 import agh.ics.oop.*;
 import javafx.application.Application;
 import javafx.application.Platform;
-import javafx.geometry.HPos;
+import javafx.geometry.*;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.layout.ColumnConstraints;
-import javafx.scene.layout.GridPane;
-import javafx.scene.layout.RowConstraints;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
 import java.util.Collections;
@@ -38,7 +38,25 @@ public class App extends Application implements IPositionChangeObserver, IOrient
         gridPane.setGridLinesVisible(true);
         updateGrid();
 
-        Scene scene = new Scene(gridPane, 400, 400);
+        TextField textField = new TextField();
+        textField.setMinWidth(300);
+        textField.setMinHeight(50);
+        Button startButton = new Button();
+        startButton.setText("Start");
+        startButton.setMinWidth(100);
+        startButton.setMinHeight(50);
+
+        HBox hbox = new HBox();
+        hbox.getChildren().add(textField);
+        hbox.getChildren().add(startButton);
+        hbox.setDisable(true);
+
+        VBox vbox = new VBox();
+
+        vbox.getChildren().add(gridPane);
+        vbox.getChildren().add(hbox);
+
+        Scene scene = new Scene(vbox, 400, 500);
 
         primaryStage.setScene(scene);
         primaryStage.show();

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab8: Wątek symulacyjny: Punkt 6">
+    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="fix: wyświetlanie mapy w App">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/gui/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/gui/App.java" afterDir="false" />
     </list>
@@ -203,13 +203,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666003002567</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Lab3: Punkt 6.&#10;&#10;Utwórz klasę OptionsParser a w niej metodę parse, która:&#10;- akceptuje tablicę łańcuchów znaków,&#10;- zwraca tablicę kierunków ruchu MoveDirection,&#10;- zamienia łańcuchy f oraz forward na kierunek MoveDirection.FORWARD, b oraz backward na kierunek MoveDirection.BACKWARD, itd.&#10;- dla nieznanych kierunków nie umieszcza ich w tablicy wynikowej (tablica wynikowa powinna zawierać wyłącznie prawidłowe kierunki).">
-      <created>1666718541406</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1666718541406</updated>
     </task>
     <task id="LOCAL-00030" summary="Lab3: Punkt 7.&#10;&#10;Zmodyfikuj metodę main tak, aby korzystając z klasy OptionsParser umożliwiała sterowanie zwierzęciem.">
       <created>1666718755437</created>
@@ -547,7 +540,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670760724724</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="fix: wyświetlanie mapy w App">
+      <created>1670761516808</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1670761516809</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +589,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Lab7: Obsługa wyjątków: AbstractWorldMap" />
     <MESSAGE value="Lab7: Obsługa wyjątków: aktualizacja testów" />
     <MESSAGE value="Dodaj abstrakcyjną klasę dla Animal i Grass" />
     <MESSAGE value="Lab7: MapBoundary i UnboundedMap" />
@@ -614,7 +613,8 @@
     <MESSAGE value="Lab8: Wątek symulacyjny: Punkt 4" />
     <MESSAGE value="Lab8: Wątek symulacyjny: Punkt 5" />
     <MESSAGE value="Lab8: Wątek symulacyjny: Punkt 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab8: Wątek symulacyjny: Punkt 6" />
+    <MESSAGE value="fix: wyświetlanie mapy w App" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: wyświetlanie mapy w App" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
