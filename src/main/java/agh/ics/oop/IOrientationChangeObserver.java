@@ -1,5 +1,5 @@
 package agh.ics.oop;
 
 public interface IOrientationChangeObserver {
-    void orientationChanged(MapDirection oldOrientation, MapDirection newOrientation);
+    void orientationChanged(Vector2d position, MapDirection oldOrientation, MapDirection newOrientation);
 }

@@ -61,7 +61,7 @@ public class Animal implements IMapElement {
         MapDirection oldOrientation = this.orientation;
         this.orientation = orientation;
         for (IOrientationChangeObserver observer : orientationChangeObservers) {
-            observer.orientationChanged(oldOrientation, this.orientation);
+            observer.orientationChanged(position, oldOrientation, this.orientation);
         }
     }
 

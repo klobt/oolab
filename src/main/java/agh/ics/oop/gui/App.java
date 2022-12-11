@@ -17,6 +17,7 @@ import java.util.Collections;
 public class App extends Application implements IPositionChangeObserver, IOrientationChangeObserver{
     AbstractWorldMap map;
     GridPane gridPane = new GridPane();
+    Vector2d ll, ur;
     SimulationEngine engine;
 
     @Override
@@ -71,9 +72,12 @@ public class App extends Application implements IPositionChangeObserver, IOrient
     private void updateGrid() {
         gridPane.getChildren().clear();
 
+        ll = map.lowerLeft();
+        ur = map.upperRight();
+
         int windowWidth = 400, windowHeight = 400;
-        int columnWidth = windowWidth / (map.upperRight().x - map.lowerLeft().x + 1);
-        int rowHeight = windowHeight / (map.upperRight().y - map.lowerLeft().y + 1);
+        int columnWidth = windowWidth / (ur.x - ll.x + 1);
+        int rowHeight = windowHeight / (ur.y - ll.y + 1);
 
         gridPane.getColumnConstraints().clear();
         gridPane.getColumnConstraints().add(new ColumnConstraints(columnWidth));
@@ -86,42 +90,56 @@ public class App extends Application implements IPositionChangeObserver, IOrient
             GridPane.setHalignment(label, HPos.CENTER);
         }
 
-        for (int x = 0; x <= map.upperRight().x - map.lowerLeft().x; x++) {
-            int positionX = x + map.lowerLeft().x;
+        for (int x = 0; x <= ur.x - ll.x; x++) {
+            int positionX = x + ll.x;
             gridPane.getColumnConstraints().add(new ColumnConstraints(columnWidth));
             Label label = new Label("" + positionX);
             gridPane.add(label, x + 1, 0);
             GridPane.setHalignment(label, HPos.CENTER);
         }
 
-        for (int y = 0; y <= map.upperRight().y - map.lowerLeft().y; y++) {
-            int positionY = y + map.lowerLeft().y;
+        for (int y = 0; y <= ur.y - ll.y; y++) {
+            int positionY = y + ll.y;
             gridPane.getRowConstraints().add(new RowConstraints(rowHeight));
             Label label = new Label("" + positionY);
-            gridPane.add(label, 0, map.upperRight().y - map.lowerLeft().y - y + 1);
+            gridPane.add(label, 0, ur.y - ll.y - y + 1);
             GridPane.setHalignment(label, HPos.CENTER);
         }
 
-        for (int y = 0; y <= map.upperRight().y - map.lowerLeft().y; y++) {
-            for (int x = 0; x <= map.upperRight().x - map.lowerLeft().x; x++) {
-                Vector2d position = new Vector2d(x + map.lowerLeft().x, y + map.lowerLeft().y);
+        for (int y = 0; y <= ur.y - ll.y; y++) {
+            for (int x = 0; x <= ur.x - ll.x; x++) {
+                Vector2d position = new Vector2d(x + ll.x, y + ll.y);
                 Object object = map.objectAt(position);
                 if (object != null) {
                     GuiElementBox elementBox = new GuiElementBox((IMapElement) object);
-                    gridPane.add(elementBox, x + 1, map.upperRight().y - map.lowerLeft().y - y + 1);
+                    gridPane.add(elementBox, x + 1, ur.y - ll.y - y + 1);
                     GridPane.setHalignment(elementBox, HPos.CENTER);
                 }
             }
         }
     }
 
+    private void updateGridAtPoint(Vector2d position) {
+        if (map.lowerLeft() != ll || map.upperRight() != ur) {
+            updateGrid();
+        } else {
+            Object object = map.objectAt(position);
+            if (object != null) {
+                int x = position.x - ll.x, y = position.y - ll.y;
+                GuiElementBox elementBox = new GuiElementBox((IMapElement) object);
+                gridPane.add(elementBox, x + 1, ur.y - ll.y - y + 1);
+                GridPane.setHalignment(elementBox, HPos.CENTER);
+            }
+        }
+    }
+
     @Override
-    public void orientationChanged(MapDirection oldOrientation, MapDirection newOrientation) {
-        Platform.runLater(this::updateGrid);
+    public void orientationChanged(Vector2d position, MapDirection oldOrientation, MapDirection newOrientation) {
+        Platform.runLater(() -> updateGridAtPoint(position));
     }
 
     @Override
     public void positionChanged(Vector2d oldPosition, Vector2d newPosition, int zIndex) {
-        Platform.runLater(this::updateGrid);
+        Platform.runLater(() -> updateGridAtPoint(newPosition));
     }
 }

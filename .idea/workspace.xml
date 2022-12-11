@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab8: Inne elementy interfejsu: Punkt 3">
+    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab8: Inne elementy interfejsu: Punkt 4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/IOrientationChangeObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/IOrientationChangeObserver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/gui/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/gui/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -204,20 +205,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666003002567</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Lab4: Punkt 3.">
-      <created>1668434516149</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1668434516149</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Lab4: Punkt 4.">
-      <created>1668434580545</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1668434580545</updated>
     </task>
     <task id="LOCAL-00035" summary="Lab4: Punkt 4.">
       <created>1668434971741</created>
@@ -548,7 +535,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670762618336</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="fix: obserwacja orientacji">
+      <created>1670763267716</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1670763267716</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Lab8: Inne elementy interfejsu: Punkt 4">
+      <created>1670763291558</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1670763291558</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -590,8 +591,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Lab7: Szkielet aplikacji JavaFX" />
-    <MESSAGE value="Lab7: Wyświetlanie mapy w GUI: Punkt 1." />
     <MESSAGE value="Lab7: Wyświetlanie mapy w GUI: Punkt 2." />
     <MESSAGE value="Lab7: Wyświetlanie mapy w GUI: Punkt 3. i 4." />
     <MESSAGE value="Lab7: Wyświetlanie mapy w GUI: Punkt 5." />
@@ -615,7 +614,9 @@
     <MESSAGE value="Lab8: Inne elementy interfejsu: Punkt 1" />
     <MESSAGE value="Lab8: Inne elementy interfejsu: Punkt 2" />
     <MESSAGE value="Lab8: Inne elementy interfejsu: Punkt 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab8: Inne elementy interfejsu: Punkt 3" />
+    <MESSAGE value="fix: obserwacja orientacji" />
+    <MESSAGE value="Lab8: Inne elementy interfejsu: Punkt 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab8: Inne elementy interfejsu: Punkt 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
