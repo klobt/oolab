@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="Lab8: Wątek symulacyjny: Punkt 2: Dla zaawansowanych">
+    <list default="true" id="ed4005af-f5fa-4cd9-8b3e-a29743880e67" name="Changes" comment="fix: wymiary">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/agh/ics/oop/gui/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/ics/oop/gui/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +72,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.General&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.World">
+  <component name="RunManager" selected="Gradle.Tests in 'oolab.test'">
     <configuration name="World" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="agh.ics.oop.World" />
       <module name="oolab.main" />
@@ -203,13 +202,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666003002567</updated>
-    </task>
-    <task id="LOCAL-00036" summary="Lab4: Punkt 3.">
-      <created>1668448617296</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1668448617296</updated>
     </task>
     <task id="LOCAL-00037" summary="Lab4: Punkt 4.">
       <created>1668448634289</created>
@@ -547,7 +539,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670764026714</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="fix: wymiary">
+      <created>1670764107873</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1670764107873</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +588,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Lab7: Wyświetlanie mapy w GUI: Punkt 3. i 4." />
     <MESSAGE value="Lab7: Wyświetlanie mapy w GUI: Punkt 5." />
     <MESSAGE value="Lab7: Wyświetlanie mapy w GUI: Punkt 6." />
     <MESSAGE value="Lab7: Wyświetlanie mapy w GUI: Punkt 7." />
@@ -614,7 +612,8 @@
     <MESSAGE value="fix: obserwacja orientacji" />
     <MESSAGE value="Lab8: Inne elementy interfejsu: Punkt 4" />
     <MESSAGE value="Lab8: Wątek symulacyjny: Punkt 2: Dla zaawansowanych" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab8: Wątek symulacyjny: Punkt 2: Dla zaawansowanych" />
+    <MESSAGE value="fix: wymiary" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: wymiary" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
